@@ -1,17 +1,27 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
+import BestilCard from '../components/BestilCard.astro'
 ---
 <MainLayout title="CPH-Lab"> 
 	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
 	
-	<!--Brødkrummesti -->
+	<!-- Brødkrummesti -->
+	<div class="list-none">
+		<p>Størrelse</p>
+		<p>Fremkaldelse</p>
+		<p>Kvalitet</p>
+		<p>Kvantitet</p>
+		<p>Kurv</p>
+	</div>
+
 	<h1 class="text-text-primary">Størrelse</h1>
 	<h2 class="text-text-secondary">Vælg din filmrulle</h2>
 
 	<h3 class="text-text-primary">Standard størrelser</h3>
 	<!-- Card af filmruller -->
-
+	<BestilCard img="../assets/images/35mm.webp" alt="35mm filmrulle" title="35mm" price="40 kr."/>
+	<BestilCard img="../assets/images/120mm.webp" alt="120mm filmrulle" title="120mm" price="120 kr."/>
 	<h3 class="text-text-primary">Special størrelser</h3>
 	<!-- Card af filmruller -->
 	<!-- Fortsæt knap -->
