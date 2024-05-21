@@ -87,6 +87,22 @@ module.exports = {
           secondary: "#20221F",
           secondaryhover: "#474946",
         },
+
+        text: {
+          primary: "#F0F0F0",
+          secondary: "#FBBA08",
+          tertiary: "#E0C56A",
+          special: "#141613",
+        },
+
+        text_btn: {
+          primary: "#20221F",
+          secondary: "#F0F0F0",
+        },
+
+        text_card: {
+          price: "#B5B3B0",
+        },
       },
     },
   },
