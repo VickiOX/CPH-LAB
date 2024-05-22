@@ -7,6 +7,36 @@ module.exports = {
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/container-queries"),
   ],
+  
+  fontSize: {
+    breadcrumb_buttontext_mobil_xxs: "10px",
+    cart_mobil_xs: "12px",
+    mobil_sm: "14px",
+    mobil_md: "16px",
+    mobil_lg: "18px",
+    mobil_xl: "20px",
+    mobil_2xl: "24px",
+    mobil_3xl: "26px",
+    mobil_4xl: "32px",
+
+    xxs: "10px",
+    xs: "12px",
+    sm: "14px",
+    md: "16px",
+    lg: "18px",
+    xl: "20px",
+    "2xl": "24px",
+    "3xl": "26px",
+    "4xl": "34px",
+    "5xl": "40px",
+    "6xl": "60px",
+    "7xl": "80px",
+  },
+
+  fontFamily: {
+    display: ["Lora"],
+    body: ["Arial"],
+  },
 
   theme: {
     spacing: {
