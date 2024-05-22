@@ -30,7 +30,6 @@ module.exports = {
     "4xl": "34px",
     "5xl": "40px",
     "6xl": "60px",
-    "7xl": "80px",
   },
 
   fontFamily: {
