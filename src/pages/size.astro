@@ -5,7 +5,8 @@ import BestilCard from '../components/BestilCard.astro'
 ---
 <MainLayout title="CPH-Lab"> 
 	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
-	
+	<article class="mx-19">
+
 	<!-- Brødkrummesti -->
 	<div class="list-none">
 		<p>Størrelse</p>
@@ -20,10 +21,14 @@ import BestilCard from '../components/BestilCard.astro'
 
 	<h3 class="text-text-primary">Standard størrelser</h3>
 	<!-- Card af filmruller -->
-	<BestilCard img="../assets/images/35mm.webp" alt="35mm filmrulle" title="35mm" price="40 kr."/>
-	<BestilCard img="../assets/images/120mm.webp" alt="120mm filmrulle" title="120mm" price="120 kr."/>
-	
+	<div class="grid grid-cols-2 gap-15 lg:gap-20 px-12 py-5 -mx-11">
+	<BestilCard img="src/assets/images/mm35.webp" alt="35mm filmrulle" title="35mm" price="40 kr."/>
+	<BestilCard img="src/assets/images/mm120.webp" alt="120mm filmrulle" title="120mm" price="120 kr."/>
+</div>
+
 	<h3 class="text-text-primary">Special størrelser</h3>
 	<!-- Card af filmruller -->
 	<!-- Fortsæt knap -->
+
+</article>
 </MainLayout>
