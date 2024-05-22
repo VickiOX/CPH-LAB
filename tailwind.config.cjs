@@ -9,8 +9,8 @@ module.exports = {
   ],
   
   fontSize: {
-    breadcrumb_buttontext_mobil_xxs: "10px",
-    cart_mobil_xs: "12px",
+    mobil_xxs: "10px",
+    mobil_xs: "12px",
     mobil_sm: "14px",
     mobil_md: "16px",
     mobil_lg: "18px",
