@@ -34,8 +34,8 @@ module.exports = {
   },
 
   fontFamily: {
-    display: ['Lora'],
-    body: ['Arial']
+    display: ["Lora"],
+    body: ["Arial"],
   },
 
   theme: {
