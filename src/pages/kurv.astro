@@ -1,11 +1,12 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
-import BestilCard from "../components/BestilCard.astro";
+import KurvOversigt from "../components/KurvOversigt.astro";
+import Ialt from "../components/Ialt.astro";
 ---
 <MainLayout title="CPH-Lab"> 
 	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
-	<article class="">
+	<article class="mx-14">
 
 	
     <!-- Brødkrummesti mobil -->
@@ -17,8 +18,8 @@ import BestilCard from "../components/BestilCard.astro";
 		</div>
 		<div class="list-none flex text-text-primary font-extralight pt-1 gap-4 text-xs mx-11">
 			<p>Opløsning</p>
-			<p class="text-text-secondary">Kvantitet</p>
-			<p>Kurv</p>
+			<p>Kvantitet</p>
+			<p class="text-text-secondary">Kurv</p>
 		</div>
 	</div>
 	
@@ -29,34 +30,29 @@ import BestilCard from "../components/BestilCard.astro";
 			<p>Størrelse</p>
 			<p>Fremkaldelsestype</p>
 			<p>Opløsning</p>
-			<p class="text-text-secondary">Kvantitet</p>
-			<p>Kurv</p>
+			<p>Kvantitet</p>
+			<p class="text-text-secondary">Kurv</p>
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-mobil4xl font-[display] pt-12 lg:text-5xl">Kvantitet</h1>
+	<h1 class="text-text-primary text-center text-mobil4xl font-[display] pt-12 lg:text-5xl lg:pt-4">Kurv</h1>
 
 
 	<!-- Card af filmruller -->
 	<section class="mx-11">
-        <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Vælg antal filmruller</h2>
+        <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Dine fremkaldelsesvalg</h2>
 
-    <div class="flex justify-center">
-		<div class="grid grid-cols-3 gap-9 lg:gap-20 lg:pt-14">
-         
-		<BestilCard img="src/assets/images/enkelt.webp" alt="large" title="1 stk."/>
-         
-		<BestilCard img="src/assets/images/tre-ruller.webp" alt="x-large" title="3 stk."/>
-          
-		<BestilCard img="src/assets/images/mange-ruller.webp" alt="xx-large" title="10 stk."/>
-	    </div>
-	</div>
-
-    <div class="flex justify-center">
-    <div class="bg-card-primary border border-card-stroke px-6 py-4 grid grid-cols-3 mt-10 gap-5 lg:mt-18">
-        <label class="text-text-primary py-4 col-start-1">Andet antal</label>
-        <input class="w-[100px] h-[40px] col-start-3 lg:w-[185px] focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="number" id="quantity" name="quantity" min="1" max="100">
+        <div class="flex justify-center">
+         <div class="mx-0 lg:mx-32 lg:pt-10">
+		<KurvOversigt img="src/assets/images/mm35.webp" price="40 kr." title="Filmrulle:" text="35 mm"/>
+        <KurvOversigt img="src/assets/images/digitale-foto.webp" price="79 kr." title="Fremkaldelsestype:" text="Digital fremkaldelse"/>
+        <KurvOversigt img="src/assets/images/xx-large.webp" price="99 kr." title="Opløsning:" text="XX-Large"/>
+        <KurvOversigt img="src/assets/images/enkelt.webp" title="Antal:" text="3 stk."/>
+        <Ialt></Ialt>
+        </div>
     </div>
+         
+
 </div>
 </section>
 
