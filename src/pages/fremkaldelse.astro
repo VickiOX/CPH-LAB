@@ -5,7 +5,7 @@ import GuideCards from "../components/GuideCards.astro";
 ---
 <MainLayout title="CPH-Lab"> 
 	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
-	<article class="mx-19"></article>
+	<article class="mx-19">
 
     <!-- Brødkrummesti mobil -->
     <div class="lg:hidden">
@@ -57,3 +57,25 @@ import GuideCards from "../components/GuideCards.astro";
     <GuideCards title="03. Modtag dine filer" img="src/assets/images/modtag.webp" alt="computer" text="Afhængigt af dit køb, sender vi enten digitale filer direkte til din mail eller negativer/USB/print pr. post." textto="Vi tilbyder også at gemme dine negativer i op til 3 måneder. "></GuideCards>
 </div>
 </section>
+
+<!-- Web -->
+<div class="hidden lg:block">
+	<div class="pt-6">
+		<!-- Fortsæt knap -->
+		<div class="flex justify-end mx-22">
+		<Button variant="primary" size="medium">Fortsæt</Button>
+		</div>
+	</div>
+	</div>
+	
+	<!-- Mobil -->
+	<div class="lg:hidden">
+		<div class="grid grid-cols-2 pt-19 gap-17 mx-19">
+	  
+				<!-- Fortsæt knap -->
+				<Button variant="primary" size="small">Fortsæt</Button>
+	
+			</div>
+		</div>
+	</div>
+	</article>
