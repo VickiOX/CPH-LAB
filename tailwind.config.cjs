@@ -7,8 +7,7 @@ module.exports = {
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/container-queries"),
   ],
-<<<<<<< HEAD
-  
+
   fontSize: {
     mobil_xxs: "10px",
     mobil_xs: "12px",
@@ -32,7 +31,6 @@ module.exports = {
     "5xl": "40px",
     "6xl": "60px",
   },
-=======
 
   theme: {
     fontSize: {
@@ -45,7 +43,6 @@ module.exports = {
       mobil_2xl: "24px",
       mobil_3xl: "26px",
       mobil_4xl: "32px",
->>>>>>> fremkaldelse-v3
 
       xxs: "10px",
       xs: "12px",
