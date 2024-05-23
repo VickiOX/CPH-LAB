@@ -1,0 +1,81 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import GuideCards from "../components/GuideCards.astro";
+---
+<MainLayout title="CPH-Lab"> 
+	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
+	<article class="mx-19">
+
+    <!-- Brødkrummesti mobil -->
+    <div class="lg:hidden">
+	<div class="list-none flex text-text-primary font-extralight pt-22 gap-4 text-xs mx-11">
+		<p class="text-text-secondary">Fremkaldelse</p>
+		<p>Størrelse</p>
+		<p>Fremkaldelsestype</p>
+	</div>
+	<div class="list-none flex text-text-primary font-extralight pt-1 gap-4 text-xs mx-11">
+		<p>Opløsning</p>
+		<p>Kvantitet</p>
+		<p>Kurv</p>
+	</div>
+</div>
+
+  <!-- Brødkrummesti web -->
+  <div class="hidden lg:block">
+    <div class="list-none flex text-text-primary font-extralight pt-3 pb-12 gap-4 text-sm mx-11 font-[body]">
+		<p class="text-text-secondary">Fremkaldelse</p>
+		<p>Størrelse</p>
+		<p>Fremkaldelsestype</p>
+		<p>Opløsning</p>
+		<p>Kvantitet</p>
+		<p>Kurv</p>
+	</div>
+</div>
+
+<h1  class="text-text-primary text-center text-mobil4xl font-[display] pt-12 lg:text-5xl">Bestil fremkaldelse</h1>
+<h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Velkommen til selvbetjening</h2>
+
+<div class="mx-19 pt-10 lg:mx-22 lg:grid lg:grid-cols-2 lg:gap-31 lg:pt-20">
+<div class="text-text-primary text-mobilsm lg:text-md">
+    <p class="font-extralight">Velkommen til CPH-LABs selvbetjening! Her kan du købe fremkaldelse til dine projekter.</p>
+    <p class="font-normal pt-6">Bemærk venligst, at hvis du skal have fremkaldt film i forskellige formattyper, skal du bestille disse separat og føje dem til kurven enkeltvis.</p> 
+    </p>
+</div>
+<div class="lg:mx-21">
+    <Button></Button>
+    <p class="text-text-primary text-cartmobilxs uppercase lg:text-xs">* OBS: Ved sending betaler du for fragt.</p>
+</div>
+</div>
+
+<section class="lg:mx-17 lg:pt-17">
+<h3 class="text-text-secondary text-start font-[display] pt-10 lg:text-2xl lg:pt-14 lg:pb-6 mx-19">Sådan får du fremkaldt</h3>
+
+<div class="lg:grid lg:grid-cols-3 lg:gap-0 lg:mx-0">
+    <GuideCards title="01. Læg en ordre" img="src/assets/images/computer.webp" alt="computer" text="Bestil din ønskede fremkaldelse af dine film online, ved at følge vores  fremkaldelsesguide."></GuideCards>
+    <GuideCards title="02. Send dine film" img="src/assets/images/send.webp" alt="computer" text="1. Pak dine medier (film, bånd, dias, smalfilm) i en konvolut eller pakke." textto="2. Skriv dit ordrenummer og email på pakken." texttre="3. Send pakken med posten til fremkalderstudiet."></GuideCards>
+    <GuideCards title="03. Modtag dine filer" img="src/assets/images/modtag.webp" alt="computer" text="Afhængigt af dit køb, sender vi enten digitale filer direkte til din mail eller negativer/USB/print pr. post." textto="Vi tilbyder også at gemme dine negativer i op til 3 måneder. "></GuideCards>
+</div>
+</section>
+
+<!-- Web -->
+<div class="hidden lg:block">
+	<div class="pt-6">
+		<!-- Fortsæt knap -->
+		<div class="flex justify-end mx-22">
+		<Button variant="primary" size="medium">Fortsæt</Button>
+		</div>
+	</div>
+	</div>
+	
+	<!-- Mobil -->
+	<div class="lg:hidden">
+		<div class="grid grid-cols-2 pt-19 gap-6 mx-0">
+	  
+				<!-- Fortsæt knap -->
+				<Button variant="primary" size="small">Fortsæt</Button>
+	
+			</div>
+		</div>
+	</div>
+	</article>

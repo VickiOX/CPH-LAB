@@ -1,0 +1,86 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo/public/logo.png";
+import Instagram from "../assets/icons/instagram.svg";
+import Facebook from "../assets/icons/facebook.svg";
+import Button from "../components/Button.astro";
+---
+
+<div>
+    <footer class="border-t border-grey-100 max-w-full pt-14 flex lg:justify-center">
+    <div class="w-full max-w-screen-lg grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-26">
+
+        <div class="col-span-1 text-center lg:text-left order-3 md:order-1">
+          <h2 class="text-lg lg:text-xl font-serif font-bold py-6 text-grey-100 uppercase lg:mt-12 hover:text-yellow-100 cursor-pointer">Kontakt</h2>
+          <ul class="text-grey-100 lg:text-lg text-sm lg:leading leading-6">
+            <li class="hover:text-yellow-100 underline"><a href="mailto:info@cph-lab.dk">info@cph-lab.dk</a></li>
+            <br>
+            <li class="font-bold"><a href="#"></a>CPH-LAB / Hørsholm Foto</li>
+            <li><a href="#"></a>Hovedgaden 12 <br> 2970 Hørsholm</li>
+          </ul>
+          <div class="flex gap-6 lg:justify-start justify-center py-10">
+            <a href="https://www.facebook.com/CPHLABDK" target="_blank">
+              <Image src={Instagram} alt="Instagram logo" class="hover:brightness-50"/>
+            </a>
+            <a href="https://www.instagram.com/cph.lab" target="_blank">
+              <Image src={Facebook} alt="Facebook logo" class="hover:brightness-50"/>    
+            </a>
+          </div>
+        </div>
+  
+        <div class="col-span-1 text-center lg:text-center order-1 md:order-2">
+          <h2 class="text-lg lg:text-xl font-serif font-bold py-6 text-grey-100 uppercase lg:py-12 hover:text-yellow-100 cursor-pointer">Services</h2>
+          <ul class="text-grey-100 lg:text-lg text-sm lg:leading leading-6">
+            <li class="hover:text-yellow-100 cursor-pointer"><a href="#"></a>Bestil fremkaldelse</li>
+            <li class="hover:text-yellow-100 cursor-pointer">Overspilning af videobånd</li>
+            <li class="hover:text-yellow-100 cursor-pointer">Scan af lysbilleder</li>
+            <li class="hover:text-yellow-100 cursor-pointer">Scan af papirbilleder</li>
+            <li class="hover:text-yellow-100 cursor-pointer">Overspilninger af smalfilm</li>
+          </ul>
+        </div>
+  
+        <div class="col-span-1 text-center lg:text-right order-2 md:order-3">
+          <h2 class="text-lg lg:text-xl font-serif font-bold py-6 text-grey-100 uppercase lg:py-12 hover:text-yellow-100 cursor-pointer">Information</h2>
+          <ul class="text-grey-100 lg:text-lg text-sm lg:leading leading-6">
+              <li class="hover:text-yellow-100 cursor-pointer">Forsendelse og returnering</li>
+              <li class="hover:text-yellow-100 cursor-pointer">Betalingsmetoder</li>
+              <li class="hover:text-yellow-100 cursor-pointer">Persondatapolitik</li>
+              <li class="hover:text-yellow-100 cursor-pointer">FAQ</li>
+              <li class="hover:text-yellow-100 cursor-pointer">Handelsbetingelser</li>
+          </ul>
+        </div>
+      </div>
+</div>
+
+<div class="flex p-13 items-center justify-center">    
+    <a href="#">
+        <Image src={logo} alt="logo" class="p-10 w-26" />
+    </a>
+</div>
+
+<div class="flex items-center justify-center py-4 lg:py-10">
+    <h3 class="lg:text-xl text-lg font-serif font-bold text-grey-100">Kom med på vores venneliste</h3>
+</div>
+
+<div class="w-34 mx-auto flex">    
+    <label for="email" class="block"></label>
+    <input
+      type="text"
+      id="email"
+      name="email"
+      placeholder="placeholder@myemail.com"
+      class="placeholder-grey-50 w-full text-md  focus:ring-0 px-7 border-2 border-yellow-200 focus:outline-none focus:border-2 focus:border-yellow-100"
+      />
+      <button>
+        <Button variant="primary" size="medium">Tilmeld</Button>
+      </button>
+  </div>
+
+  
+  <div class="flex uppercase py-10 text-grey-100" style="justify-content: space-between;">
+    <div class="text-xs ml-12">CVR: 40 80 91 20</div>
+    <div class="text-xs mr-12">Copyright 2024 © CPH-LAB</div>
+</div>
+</footer>
+  
+  

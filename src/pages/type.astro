@@ -1,0 +1,90 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import BestilCard from '../components/BestilCard.astro'
+import FremkalType from "../components/FremkalType.astro";
+
+---
+<MainLayout title="CPH-Lab"> 
+	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
+	<article class="mx-19">
+
+	
+    <!-- Brødkrummesti mobil -->
+    <div class="lg:hidden">
+		<div class="list-none flex text-text-primary font-extralight pt-22 gap-4 text-xs mx-11">
+			<p>Fremkaldelse</p>
+			<p>Størrelse</p>
+			<p class="text-text-secondary">Fremkaldelsestype</p>
+		</div>
+		<div class="list-none flex text-text-primary font-extralight pt-1 gap-4 text-xs mx-11">
+			<p>Opløsning</p>
+			<p>Kvantitet</p>
+			<p>Kurv</p>
+		</div>
+	</div>
+	
+	  <!-- Brødkrummesti web -->
+	  <div class="hidden lg:block">
+		<div class="list-none flex text-text-primary font-extralight pt-3 pb-12 gap-4 text-sm mx-11 font-[body]">
+			<p>Fremkaldelse</p>
+			<p>Størrelse</p>
+			<p class="text-text-secondary">Fremkaldelsestype</p>
+			<p>Opløsning</p>
+			<p>Kvantitet</p>
+			<p>Kurv</p>
+		</div>
+	</div>
+
+	<h1 class="text-text-primary text-center text-mobil4xl font-[display] pt-12 lg:text-5xl">Fremkaldelsestype</h1>
+	<h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Vælg hvordan du ønsker billederne fremkaldt</h2>
+
+	<!-- Card af fremkaldelsestype -->
+    <div class="lg:grid lg:grid-cols-3 lg:mx-0 lg:relative lg:left-29 lg:pt-16">
+
+        
+	<div class="flex justify-center">
+	<div class="grid grid-cols-2 gap-15 lg:gap-20 mx-6 py-5 "> 
+	    <BestilCard img="src/assets/images/digitale-foto.webp" alt="Digitale billeder" title="Digitale billeder" price="+79 kr."/>
+	    <BestilCard img="src/assets/images/papirfoto.webp" alt="Papirfoto" title="Printede billeder" price="+119 kr."/>
+    </div>
+    </div>
+
+    <div class="mx-19 pt-10 lg:py-5 ">
+    <FremkalType img="src/assets/images/digitale-foto.webp" alt="digitale foto" imgto="src/assets/images/papirfoto.webp" alt="papirfoto" title="Digitale + printede billeder" price="+210 kr."/>
+    </div>
+</div>
+</div>
+
+ 	<!-- Web -->
+<div class="hidden lg:block">
+	<div class="grid grid-cols-2 pt-6">
+		<!-- Tilbage knap -->
+		<div class="flex justify-start mx-22">
+		<Button variant="secondary" size="medium">Fortsæt</Button>
+		</div>
+	
+		<!-- Fortsæt knap -->
+		<div class="flex justify-end mx-22">
+		<Button variant="primary" size="medium">Fortsæt</Button>
+		</div>
+	</div>
+	</div>
+	
+	<!-- Mobil -->
+	<div class="lg:hidden">
+		<div class="grid grid-cols-2 pt-19 gap-6 mx-0">
+			
+		 
+				<!-- Tilbage knap -->
+				<Button variant="secondary" size="small">Fortsæt</Button>
+	  
+				<!-- Fortsæt knap -->
+				<Button variant="primary" size="small">Fortsæt</Button>
+	
+			</div>
+		</div>
+	</div>
+
+</article>
+</MainLayout>
