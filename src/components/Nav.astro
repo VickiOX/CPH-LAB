@@ -4,12 +4,12 @@ import logo from "../assets/logo/public/logo.png";
 import cart from "../assets/icons/cart.svg";
 ---
 
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full">
-  <div id="navbar" class="flex flex-row justify-between">
+<div x-data="{ showmenu: false }" class="fixed lg:static w-full">
+  <div id="navbar" class="flex flex-row justify-between border-b px-10 border-grey-100 bg-grey-400">
 
     <div id="logo">
       <a href="#">
-        <Image src={logo} alt="logo" class="p-10 w-28" />
+        <Image src={logo} alt="logo" class="py-10 w-25" />
       </a>
     </div>
 
@@ -80,12 +80,12 @@ import cart from "../assets/icons/cart.svg";
 
   <nav
     id="mobilmenu"
-    class="flex m-10 bg-grey-400 flex-col content-center pt-4 lg:hidden"
+    class="flex bg-grey-400 flex-col content-center pt-4 lg:hidden"
     x-show="showmenu"
     x-transition
     x-on:click.outside="showmenu = false"
   >
-    <ul class="p-12">
+    <ul class="py-14 pl-18">
       <li class="py-5 uppercase text-grey-100 hover:text-yellow-100">
         <a href="#">Bestil fremkaldelse</a>
       </li>
