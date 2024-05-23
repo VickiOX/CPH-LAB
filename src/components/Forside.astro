@@ -1,0 +1,17 @@
+---
+import Button from '../components/Button.astro';
+---
+<div class="w-full relative">
+    <div class="w-full h-64 flex items-center justify-center overflow-hidden"> <!-- Added overflow-hidden -->
+        <video class="w-full h-auto" autoplay loop muted> <!-- Adjusted height to h-auto -->
+            <source src="https://video.wixstatic.com/video/392078_63850ecb89c7493290c963f27f268b95/1080p/mp4/file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+        <span class="text-grey-500 font-[Lora] font-bold text-3xl leading-snug">a c41-studio</span> <!-- Adjusted line height with leading-snug and added py-2 for vertical padding -->
+        <h1 class="uppercase font-[Lora] font-bold text-yellow-200 text-4xl lg:text-6xl leading-snug pt-2 pb-12">Professionel film <br> fremkaldelse</h1> <!-- Adjusted line height with leading-snug and added py-2 for vertical padding -->
+        <Button variant="primary" size="large" class="">Bestil fremkaldelse</Button>
+    </div>
+    
+</div>
