@@ -8,26 +8,37 @@ import BestilCard from '../components/BestilCard.astro'
 	<article class="mx-19">
 
 	<!-- Brødkrummesti -->
-	<div class="list-none">
-		<p>Størrelse</p>
+	<div class="list-none flex text-text-primary font-extralight pt-22 gap-4 text-xs -mx-14">
 		<p>Fremkaldelse</p>
-		<p>Kvalitet</p>
+		<p class="text-text-secondary">Størrelse</p>
+		<p>Fremkaldelsestype</p>
+	</div>
+	<div class="list-none flex text-text-primary font-extralight pt-1 gap-4 text-xs -mx-14">
+		<p>Opløsning</p>
 		<p>Kvantitet</p>
 		<p>Kurv</p>
 	</div>
 
-	<h1 class="text-text-primary">Størrelse</h1>
-	<h2 class="text-text-secondary">Vælg din filmrulle</h2>
+	<h1 class="text-text-primary text-center text-mobil_4xl font-[display] pt-12">Størrelse</h1>
+	<h2 class="text-text-secondary text-center font-[display]">Vælg din filmrulle</h2>
 
-	<h3 class="text-text-primary">Standard størrelser</h3>
+	<h3 class="text-text-primary text-center font-[display]">Standard størrelser</h3>
 	<!-- Card af filmruller -->
 	<div class="grid grid-cols-2 gap-15 lg:gap-20 px-12 py-5 -mx-11">
 	<BestilCard img="src/assets/images/mm35.webp" alt="35mm filmrulle" title="35mm" price="40 kr."/>
 	<BestilCard img="src/assets/images/mm120.webp" alt="120mm filmrulle" title="120mm" price="120 kr."/>
 </div>
 
-	<h3 class="text-text-primary">Special størrelser</h3>
+	<h3 class="text-text-primary pt-15 text-center font-[display]">Special størrelser</h3>
 	<!-- Card af filmruller -->
+
+	<div class="grid grid-cols-2 gap-15 lg:gap-20 px-12 py-5 -mx-11">
+		<BestilCard img="src/assets/images/mm127.webp" alt="35mm filmrulle" title="35mm" price="40 kr."/>
+		<BestilCard img="src/assets/images/mm110.webp" alt="120mm filmrulle" title="120mm" price="120 kr."/>
+		<BestilCard img="src/assets/images/mm126.webp" alt="35mm filmrulle" title="35mm" price="40 kr."/>
+		<BestilCard img="src/assets/images/storformat.webp" alt="120mm filmrulle" title="120mm" price="120 kr."/>
+	</div>
+
 	<!-- Fortsæt knap -->
 
 </article>
