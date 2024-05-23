@@ -7,22 +7,37 @@ import BestilCard from '../components/BestilCard.astro'
 	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
 	<article class="mx-19">
 
-	<!-- Brødkrummesti -->
-	<div class="list-none flex text-text-primary font-extralight pt-22 gap-4 text-xs -mx-14">
-		<p>Fremkaldelse</p>
-		<p class="text-text-secondary">Størrelse</p>
-		<p>Fremkaldelsestype</p>
+	
+    <!-- Brødkrummesti mobil -->
+    <div class="lg:hidden">
+		<div class="list-none flex text-text-primary font-extralight pt-22 gap-4 text-xs mx-11">
+			<p>Fremkaldelse</p>
+			<p class="text-text-secondary">Størrelse</p>
+			<p>Fremkaldelsestype</p>
+		</div>
+		<div class="list-none flex text-text-primary font-extralight pt-1 gap-4 text-xs mx-11">
+			<p>Opløsning</p>
+			<p>Kvantitet</p>
+			<p>Kurv</p>
+		</div>
 	</div>
-	<div class="list-none flex text-text-primary font-extralight pt-1 gap-4 text-xs -mx-14">
-		<p>Opløsning</p>
-		<p>Kvantitet</p>
-		<p>Kurv</p>
+	
+	  <!-- Brødkrummesti web -->
+	  <div class="hidden lg:block">
+		<div class="list-none flex text-text-primary font-extralight pt-3 pb-12 gap-4 text-sm mx-11 font-[body]">
+			<p>Fremkaldelse</p>
+			<p class="text-text-secondary">Størrelse</p>
+			<p>Fremkaldelsestype</p>
+			<p>Opløsning</p>
+			<p>Kvantitet</p>
+			<p>Kurv</p>
+		</div>
 	</div>
 
 	<h1 class="text-text-primary text-center text-mobil4xl font-[display] pt-12 lg:text-5xl">Størrelse</h1>
-	<h2 class="text-text-secondary text-center font-[display]">Vælg din filmrulle</h2>
+	<h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Vælg din filmrulle</h2>
 
-	<h3 class="text-text-primary text-center font-[display]">Standard størrelser</h3>
+	<h3 class="text-text-primary text-center font-[display] pt-10 lg:text-2xl lg:pt-14 lg:pb-6 ">Standard størrelser</h3>
 	<!-- Card af filmruller -->
 	<div class="flex justify-center">
 	<div class="grid grid-cols-2 gap-15 lg:gap-20 px-12 py-5 mx-0 ">
@@ -31,7 +46,7 @@ import BestilCard from '../components/BestilCard.astro'
 </div>
 </div>
 
-	<h3 class="text-text-primary pt-15 text-center font-[display]">Special størrelser</h3>
+	<h3 class="text-text-primary pt-15 text-center font-[display] lg:text-2xl lg:pt-14 lg:pb-6">Special størrelser</h3>
 	<!-- Card af filmruller -->
 	<div class="flex justify-center">
 		<div class="grid grid-cols-2 gap-15 lg:gap-20 px-12 py-5 mx-0 lg:grid-cols-4 ">
