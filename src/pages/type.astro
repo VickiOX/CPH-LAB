@@ -56,9 +56,35 @@ import FremkalType from "../components/FremkalType.astro";
 </div>
 </div>
 
-
- 	<!-- Tilbage knap -->
-	<!-- Fortsæt knap -->
+ 	<!-- Web -->
+<div class="hidden lg:block">
+	<div class="grid grid-cols-2 pt-6">
+		<!-- Tilbage knap -->
+		<div class="flex justify-start mx-22">
+		<Button variant="secondary" size="medium">Fortsæt</Button>
+		</div>
+	
+		<!-- Fortsæt knap -->
+		<div class="flex justify-end mx-22">
+		<Button variant="primary" size="medium">Fortsæt</Button>
+		</div>
+	</div>
+	</div>
+	
+	<!-- Mobil -->
+	<div class="lg:hidden">
+		<div class="grid grid-cols-2 pt-19 gap-6 mx-0">
+			
+		 
+				<!-- Tilbage knap -->
+				<Button variant="secondary" size="small">Fortsæt</Button>
+	  
+				<!-- Fortsæt knap -->
+				<Button variant="primary" size="small">Fortsæt</Button>
+	
+			</div>
+		</div>
+	</div>
 
 </article>
 </MainLayout>

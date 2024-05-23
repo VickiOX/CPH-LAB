@@ -1,8 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
-import KvalitetCard from "../components/KvalitetCard.astro";
-import Papir from "../components/Papir.astro";
+import BestilCard from "../components/BestilCard.astro";
 ---
 <MainLayout title="CPH-Lab"> 
 	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
@@ -17,8 +16,8 @@ import Papir from "../components/Papir.astro";
 			<p>Fremkaldelsestype</p>
 		</div>
 		<div class="list-none flex text-text-primary font-extralight pt-1 gap-4 text-xs mx-11">
-			<p class="text-text-secondary">Opløsning</p>
-			<p>Kvantitet</p>
+			<p>Opløsning</p>
+			<p class="text-text-secondary">Kvantitet</p>
 			<p>Kurv</p>
 		</div>
 	</div>
@@ -29,48 +28,39 @@ import Papir from "../components/Papir.astro";
 			<p>Fremkaldelse</p>
 			<p>Størrelse</p>
 			<p>Fremkaldelsestype</p>
-			<p class="text-text-secondary">Opløsning</p>
-			<p>Kvantitet</p>
+			<p>Opløsning</p>
+			<p class="text-text-secondary">Kvantitet</p>
 			<p>Kurv</p>
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-mobil4xl font-[display] pt-12 lg:text-5xl">Opløsning</h1>
+	<h1 class="text-text-primary text-center text-mobil4xl font-[display] pt-12 lg:text-5xl">Kvantitet</h1>
 
 
 	<!-- Card af filmruller -->
 	<section class="mx-11">
-        <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Vælg scan kvalitet</h2>
+        <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Vælg antal filmruller</h2>
 
     <div class="flex justify-center">
 		<div class="grid grid-cols-3 gap-9 lg:gap-20 lg:pt-14">
          
-		<KvalitetCard img="src/assets/images/large.webp" alt="large" title="Large" text="Kan printes i A4 størrelse" textto="5 megapixel" price="40 kr."/>
+		<BestilCard img="src/assets/images/enkelt.webp" alt="large" title="1"/>
          
-		<KvalitetCard img="src/assets/images/x-large.webp" alt="x-large" title="X-Large" text="Kan printes i A3 størrelse" textto="9 megapixel" price="120 kr."/>
+		<BestilCard img="src/assets/images/tre-ruller.webp" alt="x-large" title="3"/>
           
-		<KvalitetCard img="src/assets/images/xx-large.webp" alt="xx-large" title="XX-Large" text="Kan printes i plakatstørrelse" textto="19 megapixel" price="40 kr."/>
+		<BestilCard img="src/assets/images/mange-ruller.webp" alt="xx-large" title="10"/>
 	    </div>
 	</div>
-</section>
 
-<section>
-<h2 class="text-text-secondary text-center pt-15 font-[display] text-mobilxl lg:text-4xl lg:pt-20">Vælg papirtype</h2>
-
-<div class="flex justify-center">
-<div class="grid grid-cols-2 text-text-primary text-center mx-10 gap-11 lg:mx-22 lg:gap-18">
-    <div>
-        <Papir title="Mat" price="+0 kr."></Papir>
-        <Papir title="Blankt" price="+0 kr."></Papir>
-    </div>
-
-    <div>
-        <Papir title="Mat m. hvid kant" price="+0 kr."></Papir>
-        <Papir title="Blankt m. hvid kant" price="+0 kr."></Papir>
+    <div class="flex justify-center">
+    <div class="bg-card-primary border border-card-stroke px-6 py-4 grid grid-cols-3 mt-10 gap-5 lg:mt-18">
+        <label class="text-text-primary py-4 col-start-1">Andet antal</label>
+        <input class="w-[100px] h-[40px] col-start-3 lg:w-[185px] focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="number" id="quantity" name="quantity" min="1" max="100">
     </div>
 </div>
-</div>
 </section>
+
+
 
 <!-- Web -->
 <div class="hidden lg:block">
@@ -89,7 +79,7 @@ import Papir from "../components/Papir.astro";
 
 <!-- Mobil -->
 <div class="lg:hidden">
-    <div class="grid grid-cols-2 pt-19 gap-6 mx-0">
+    <div class="grid grid-cols-2 pt-19 gap-6 mx-10">
         
      
             <!-- Tilbage knap -->
