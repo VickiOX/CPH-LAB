@@ -5,13 +5,13 @@ const {title, img, text, textto, texttre } = Astro.props;
 <div class="bg-card-primary mx-19 border border-card-stroke mt-10 lg:mt-0">
 
 <div class="relative text-center mx-0">
-    <h3 class="text-text-tertiary font-[display] pt-10 lg:text-2xl lg:pt-14 lg:pb-6 absolute text-center left-9 lg:left-[25%]">{title}</h3>
+    <h3 class="text-text-tertiary font-[display] pt-10 lg:text-2xl lg:pt-14 lg:pb-6 absolute text-center left-9 lg:text-center">{title}</h3>
     <img class="lg:w-[419px] lg:h-[319px]" src={img}>
 </div>
 
 <div class="lg:px-10 text-text-primary pt-10 px-10 text-mobilsm lg:text-md lg:font-light">
 <p >{text}</p>
-<p >{textto}</p>
+<p class="pt-4 text-text_card-price" >{textto}</p>
 <p class="pb-13">{texttre}</p>
 </div>
 </div>

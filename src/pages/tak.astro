@@ -1,0 +1,26 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import GuideCards from "../components/GuideCards.astro";
+---
+<MainLayout title="CPH-Lab"> 
+	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
+	<article class="mx-19">
+
+<h1  class="text-text-primary text-center text-mobil4xl font-[display] pt-22 lg:text-5xl">Tak!</h1>
+<h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Dit ordrenummer er;</h2>
+<h3 class="text-text-primary text-center text-mobilxl font-[display] pt-6 lg:text-5xl">SO25032</h3>
+
+
+
+<section class="lg:mx-17 lg:pt-17">
+<h3 class="text-text-primary text-start font-[display] pt-10 text-mobilmd lg:text-2xl lg:pt-14 lg:pb-6 mx-19">Følg denne guide:</h3>
+
+<div class="lg:grid lg:grid-cols-3 lg:gap-0 lg:mx-0">
+    <GuideCards title="01. Pak dine medier" img="src/assets/images/pak.webp" alt="computer" text="Pak dine medier (film, bånd, dias, smalfilm) i en konvolut eller pakke."></GuideCards>
+    <GuideCards title="02. Skriv dine informationer" img="src/assets/images/skriv.webp" alt="computer" text="Skriv dit ordrenummer, e-mail og fulde navn på pakken."></GuideCards>
+    <GuideCards title="03. Send din pakke" img="src/assets/images/send.webp" alt="computer" text="Send pakken med posten til fremkalderstudiet." textto="Vi anbefaler, at du tilkøber Track and Trace til forsendelsen. "></GuideCards>
+</div>
+</section>
+
+	</article>
