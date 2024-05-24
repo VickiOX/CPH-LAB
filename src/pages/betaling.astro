@@ -1,0 +1,156 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import KurvOversigt from "../components/KurvOversigt.astro";
+import Ialt from "../components/Ialt.astro";
+---
+<MainLayout title="CPH-Lab"> 
+	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
+	<article class="mx-14">
+
+	<h1 class="text-text-primary text-center text-mobil4xl font-[display] pt-22 lg:text-5xl lg:pt-4">Levering og betaling</h1>
+
+	<section class="mx-11 hidden">
+        <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Kurv</h2>
+
+        <div class="flex justify-center">
+         <div class="mx-0 lg:mx-32 lg:pt-10">
+		<KurvOversigt img="src/assets/images/mm35.webp" price="40 kr." title="Filmrulle:" text="35 mm"/>
+        <KurvOversigt img="src/assets/images/digitale-foto.webp" price="79 kr." title="Fremkaldelsestype:" text="Digital fremkaldelse"/>
+        <KurvOversigt img="src/assets/images/xx-large.webp" price="99 kr." title="Opløsning:" text="XX-Large"/>
+        <KurvOversigt img="src/assets/images/enkelt.webp" title="Antal:" text="3 stk."/>
+        <Ialt></Ialt>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Kundeoplysninger</h2>
+    <!-- Form -->
+    <div class="mx-12 bg-card-primary border border-card-stroke p-8 flex justify-center">
+        
+        <form class="text-text-primary ">
+            <div class="">
+            <label for="email">Email</label>
+            <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="email" id="email" name="email"/>
+        </div>
+
+            <div class="pt-4">
+            <label for="fname">Fornavn</label>
+            <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="fname" name="fname"/>
+        </div>
+
+            <div class="pt-4">
+            <label for="lname">Efternavn</label>
+            <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="lname" name="lname"/>
+        </div>
+
+            <div class="pt-4">
+            <label for="tel">Telefonnummer</label>
+            <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="tel" id="tel" name="tel"/>
+        </div>
+
+          
+        <div class="grid grid-cols-2 gap-6">
+            <div class="pt-4">
+                <label for="post">Post nr.</label>
+                <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="post" name="post" pattern="[0-4]*"/>
+            </div>
+
+            <div class="pt-4"> 
+                <label for="by">By</label>
+                <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="by" name="by"/>
+            </div>
+        </div>
+ 
+
+            <div class="grid grid-cols-2 gap-6">
+                <div class="pt-4">
+                    <label for="land">Land</label>
+                    <input class="flex w-full items-center text-text-special border border-card-secondary  focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="by" name="by"/>
+                </div>
+
+                <div class="pt-4">
+                    <label for="Region">Region</label>
+                    <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="region" name="region"/>
+                </div>
+        </div>
+    </div>
+    </div>
+            
+        </form>
+    </div>
+
+</section>
+
+<section class="pt-15">
+    <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Levering og betaling</h2>
+   
+    <div class="mx-12 bg-card-primary border border-card-stroke p-8 flex justify-center">
+        <div class="bg-card-stroke p-4 border border-card-secondary w-full">
+        
+        <form class="text-text-special">
+
+            <div class="pt-4 grid grid-cols-2">
+                <div class="flex justify-start">
+                    <input class="p-5 mx-4 rounded-full text-card-secondary focus:border focus:border-text-primary focus:ring-card-primary" type="checkbox" id="DAO" name="DAO"/>
+                    <label class="pl-2 text-sm " for="DAO">DAO til privatadresse</label>
+                </div>
+
+                <div class="text-xs flex justify-end px-5">
+                    <p>59 kr.</p>
+                </div>
+            </div>
+
+                <p class="px-14 text-sm text-text_card-price">1-4 hverdage </p>
+                <p class="px-0 pt-10 text-xs text-center pb-6 text-processbar-primary">* Kun ved ønske om negativer retur</p>
+        </form>
+        </div>
+
+</section>
+
+</div>
+
+
+
+
+<!-- Web -->
+<div class="hidden lg:block">
+<div class="grid grid-cols-2 pt-16">
+    <!-- Tilbage knap -->
+    <div class="flex justify-start mx-22">
+    <Button variant="secondary" size="medium">Tilbage</Button>
+    </div>
+
+    <!-- Fortsæt knap -->
+    <div class="flex justify-end mx-22 gap-8">
+        <Button variant="secondary" size="medium">Shop videre</Button>
+    <Button variant="primary" size="medium">Fortsæt til checkout</Button>
+    </div>
+</div>
+</div>
+
+<!-- Mobil -->
+<div class="lg:hidden">
+
+    <div class="flex justify-center pt-12">
+        <!-- Fortsæt knap -->
+        <Button variant="primary" size="small">Fortsæt til checkout</Button>
+    </div>
+
+    <div class="grid grid-cols-2 pt-8 gap-6 mx-10">
+        
+     
+            <!-- Tilbage knap -->
+            <Button variant="secondary" size="small">Tilbage</Button>
+  
+            <!-- Shop videre knap -->
+            <Button variant="secondary" size="small">Shop videre</Button>
+
+        </div>
+    </div>
+</div>
+	
+ 
+</article>
+</MainLayout>
