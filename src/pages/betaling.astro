@@ -6,15 +6,18 @@ import Ialt from "../components/Ialt.astro";
 ---
 <MainLayout title="CPH-Lab"> 
 	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
-	<article class="mx-14">
+	<article class="mx-14 lg:mx-2">
 
-	<h1 class="text-text-primary text-center text-mobil4xl font-[display] pt-22 lg:text-5xl lg:pt-4">Levering og betaling</h1>
+	<h1 class="text-text-primary text-center text-mobil4xl font-[display] pt-22 lg:text-5xl lg:pt-12">Levering og betaling</h1>
 
-	<section class="mx-11 hidden">
+    <section class="lg:grid lg:grid-cols-3 pt-10">
+
+        
+	<section class="mx-0 hidden lg:block">
         <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Kurv</h2>
 
         <div class="flex justify-center">
-         <div class="mx-0 lg:mx-32 lg:pt-10">
+         <div class="mx-0 lg:mx-19 lg:pt-10">
 		<KurvOversigt img="src/assets/images/mm35.webp" price="40 kr." title="Filmrulle:" text="35 mm"/>
         <KurvOversigt img="src/assets/images/digitale-foto.webp" price="79 kr." title="Fremkaldelsestype:" text="Digital fremkaldelse"/>
         <KurvOversigt img="src/assets/images/xx-large.webp" price="99 kr." title="Opløsning:" text="XX-Large"/>
@@ -24,10 +27,13 @@ import Ialt from "../components/Ialt.astro";
     </div>
 </section>
 
+
+
+
 <section>
     <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Kundeoplysninger</h2>
     <!-- Form -->
-    <div class="mx-12 bg-card-primary border border-card-stroke p-8 flex justify-center">
+    <div class="mx-12 lg:mx-19 bg-card-primary border border-card-stroke p-8 flex justify-center lg:mt-10">
         
         <form class="text-text-primary ">
             <div class="">
@@ -80,13 +86,13 @@ import Ialt from "../components/Ialt.astro";
             
         </form>
     </div>
-
 </section>
 
-<section class="pt-15">
+
+<section class="lg:pt-0">
     <h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Levering og betaling</h2>
    
-    <div class="mx-12 bg-card-primary border border-card-stroke p-8 flex justify-center">
+    <div class="mx-12 lg:mx-19 lg:mt-10 bg-card-primary border border-card-stroke p-8 flex justify-center border-b-0">
         <div class="bg-card-stroke p-4 border border-card-secondary w-full">
         
         <form class="text-text-special">
@@ -106,51 +112,65 @@ import Ialt from "../components/Ialt.astro";
                 <p class="px-0 pt-10 text-xs text-center pb-6 text-processbar-primary">* Kun ved ønske om negativer retur</p>
         </form>
         </div>
+    </div>
 
-</section>
 
+<div class="mx-12 lg:mx-19 bg-card-primary border border-card-stroke p-8 flex justify-center border-t-0">
+    <div class="bg-card-stroke p-4 border border-card-secondary w-full">
+    
+    <form class="text-text-special">
+
+        <div class="pt-4 grid grid-cols-2">
+            <div class="flex justify-start">
+                <input class="p-5 mx-4 rounded-full text-card-secondary focus:border focus:border-text-primary focus:ring-card-primary" type="checkbox" id="free" name="free"/>
+                <label class="pl-2 text-sm " for="free">Ingen levering/Afhent</label>
+            </div>
+
+            <div class="text-xs flex justify-end px-5">
+                <p class="uppercase">Gratis</p>
+            </div>
+        </div>
+
+            <p class="px-14 text-sm text-text_card-price pt-6 pb-8">Hovedgaden 12, 2970 Hørsholm, Denmark</p>
+            <p class="px-0 pt-10 text-xs text-center pb-6 text-processbar-primary hidden"></p>
+    </form>
+    </div>
 </div>
-
-
+</section>
+</section>
 
 
 <!-- Web -->
-<div class="hidden lg:block">
-<div class="grid grid-cols-2 pt-16">
-    <!-- Tilbage knap -->
-    <div class="flex justify-start mx-22">
-    <Button variant="secondary" size="medium">Tilbage</Button>
-    </div>
-
-    <!-- Fortsæt knap -->
-    <div class="flex justify-end mx-22 gap-8">
-        <Button variant="secondary" size="medium">Shop videre</Button>
-    <Button variant="primary" size="medium">Fortsæt til checkout</Button>
-    </div>
-</div>
-</div>
-
-<!-- Mobil -->
-<div class="lg:hidden">
-
-    <div class="flex justify-center pt-12">
+<div class="hidden lg:block pt-0">
+    <div class="grid grid-cols-2 pt-6">
+        <!-- Tilbage knap -->
+        <div class="flex justify-start mx-22">
+        <Button variant="secondary" size="medium">Tilbage</Button>
+        </div>
+    
         <!-- Fortsæt knap -->
-        <Button variant="primary" size="small">Fortsæt til checkout</Button>
+        <div class="flex justify-end mx-22">
+        <Button variant="primary" size="medium">Fortsæt</Button>
+        </div>
     </div>
-
-    <div class="grid grid-cols-2 pt-8 gap-6 mx-10">
-        
-     
-            <!-- Tilbage knap -->
-            <Button variant="secondary" size="small">Tilbage</Button>
-  
-            <!-- Shop videre knap -->
-            <Button variant="secondary" size="small">Shop videre</Button>
-
+    </div>
+    
+    <!-- Mobil -->
+    <div class="lg:hidden">
+        <div class="grid grid-cols-2 pt-19 gap-6 mx-0">
+            
+         
+                <!-- Tilbage knap -->
+                <Button variant="secondary" size="small">Tilbage</Button>
+      
+                <!-- Fortsæt knap -->
+                <Button variant="primary" size="small">Fortsæt</Button>
+    
+            </div>
         </div>
     </div>
 </div>
-	
- 
-</article>
+        
+    
+    </article>
 </MainLayout>
