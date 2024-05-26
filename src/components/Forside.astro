@@ -1,8 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Button from "./Button.astro";
 import GuideCards from "../components/GuideCards.astro";
-
 import fremkaldelser from "../assets/images/services/fremkaldelser.webp";
 import video from "../assets/images/services/video.webp";
 import digitalisering from "../assets/images/services/digitalisering.webp";
@@ -26,33 +24,19 @@ import instagram8 from "../assets/images/insta-8.webp"
 
 <!-- Hero unit -->
 <div class="w-full relative">
-  <div
-    class="w-full lg:h-[500px] flex items-center justify-center overflow-hidden relative"
-  >
-    <video
-      class="absolute top-1/2 left-1/2 w-auto min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2"
-      autoplay
-      loop
-      muted
-    >
-      <source src="src/assets/video/hero.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <div class="w-full lg:h-[500px] flex items-center justify-center overflow-hidden relative">
+      <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted>
+        <source src="src/assets/video/hero.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+      <span class="text-grey-500 font-[Lora] font-bold text-3xl">a c41-studio</span>
+      <h1 class="drop-shadow-2xl uppercase pt-10 font-[Lora] font-bold text-text-secondary text-4xl lg:text-6xl pb-12 relative z-20">Professionel <br /> film fremkaldelse</h1>
+      <Button variant="primary" size="large" class="">Bestil fremkaldelse</Button>
+    </div>
   </div>
-  <div
-    class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
-  >
-    <span class="text-grey-500 font-[Lora] font-bold text-3xl"
-      >a c41-studio</span
-    >
-    <h1
-      class="uppercase pt-10 font-[Lora] font-bold text-text-secondary text-4xl lg:text-6xl pb-12"
-    >
-      Professionel <br /> film fremkaldelse
-    </h1>
-    <Button variant="primary" size="large" class="">Bestil fremkaldelse</Button>
-  </div>
-</div>
+  
 
 <!-- Vores services -->
 <section id="services" class="lg:pt-20 mx-auto lg:px-36 justify-center w-full max-w-screen-lg grid grid-cols-1">
@@ -84,72 +68,74 @@ import instagram8 from "../assets/images/insta-8.webp"
 
 <!-- Sådan gør du -->
 <section id="guide" class="py-22 mx-auto lg:px-36 justify-center w-full max-w-screen-lg grid grid-cols-1">
-    <h2 class="font-['Lora'] font-bold text-xl lg:text-4xl text-text-primary py-10">Sådan får du fremkaldt</h2>
+    <h2 class="font-['Lora'] font-bold text-xl lg:text-4xl text-text-primary">Sådan får du fremkaldt</h2>
     <div class="lg:grid lg:grid-cols-3 lg:gap-0 lg:mx-0">
         <GuideCards title="01. Læg en ordre" img="src/assets/images/computer.webp" alt="computer" text="Bestil din ønskede fremkaldelse af dine film online, ved at følge vores  fremkaldelsesguide."></GuideCards>
         <GuideCards title="02. Send dine film" img="src/assets/images/send.webp" alt="computer" text="1. Pak dine medier (film, bånd, dias, smalfilm) i en konvolut eller pakke." textto="2. Skriv dit ordrenummer og email på pakken." texttre="3. Send pakken med posten til fremkalderstudiet."></GuideCards>
-        <GuideCards title="03. Modtag dine filer" img="src/assets/images/modtag.webp" alt="computer" text="Afhængigt af dit køb, sender vi enten digitale filer direkte til din mail eller negativer/USB/print pr. post." textto="Vi tilbyder også at gemme dine negativer i op til 3 måneder."></GuideCards>
-    </div>
+        <GuideCards title="03. Modtag dine filer" img="src/assets/images/modtag.webp" alt="computer" text="Afhængigt af dit køb, sender vi enten digitale filer direkte til din mail eller negativer/USB/print pr. post." textto="Vi tilbyder også at gemme dine negativer i op til 3 måneder. "></GuideCards>
+    </div>    
 </section>
 
 
 <!-- Anmeldelser -->
-<section>
-<h2 class="font-['Lora'] mx-28 font-bold text-xl lg:text-4xl text-text-primary lg:py-10">Anmeldelser</h2>
-<article class="lg:border-none border-b border-grey-100">
-<div class="border-t grid grid-cols-2 lg:grid-cols-4 bg-card-primary">
-    <div class="flex items-center justify-center border-b lg:border-none">
-        <Image src={anmeldelse1} alt="anmeldelse"/>
-    </div>
-
-    <div class="flex items-center justify-center border-b lg:border-none">
-        <div class="lg:mx-18 mx-10 text-center">
-            <h4 class="font-['Lora'] text-xl lg:text-2xl font-bold text-text-secondary lg:py-10">Trusted by the professionals</h4>
-            <blockquote class="lg:text-sm text-xs font-Arial italic py-8 text-text-primary">"The images are so sharp, the colors are spot on and I received the scans back so quickly! They're definitely my go-to film service in Copenhagen!"</blockquote>
-            <span class="text-xs text-text-primary font-Arial">— Bailey Wilday, Professional photographer<br><br>@baileywilday</span>    
+<section class="font-['Arial'] py-12">
+        <article class="lg:border-none border-b border-grey-100">
+            <div class="border-t grid grid-cols-2 lg:grid-cols-4 bg-card-primary">
+                <div class="flex items-center justify-center border-b lg:border-none">
+                    <Image src={anmeldelse1} alt="anmeldelse"/>
+                </div>
+                <div class="flex items-center justify-center border-b lg:border-none">
+                    <div class="lg:mx-20 mx-10 text-center">
+                        <h4 class="my-8 font-['Lora'] text-xl lg:text-2xl font-bold text-text-secondary">Trusted by the professionals</h4>
+                        <div class="py-5">
+                            <blockquote class="pb-5 lg:text-sm text-xs italic text-text-primary">"The images are so sharp, the colors are spot on and I received the scans back so quickly! <br> They're definitely my go-to film service in Copenhagen!"</blockquote>
+                            <span class="text-xs text-text-primary">— Bailey Wilday, Professional photographer @baileywilday</span>        
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+                    <Image src={anmeldelse2} alt="anmeldelse2"/>
+                </div>
+                <div class="flex items-center justify-center">
+                    <div class="lg:mx-20 mx-10 text-center">
+                        <h4 class="my-8 font-['Lora'] text-xl lg:text-2xl font-bold text-text-secondary">Loved by the people</h4>
+                        <div class="py-5">
+                            <blockquote class="py-5 lg:text-sm text-xs italic text-text-primary">"Go service – Venlig betjening – Stærkt håndværk"</blockquote>
+                            <span class="text-xs text-text-primary"> – Thomas, Trustpilot</span>
+                        </div>
+                        <div class="py-5">
+                            <blockquote class="py-5 lg:text-sm text-xs italic text-text-primary">"Som digital prof-hobby-fotograf, med hang til det analoge i fritiden, tør jeg sagtens overlade mine film og negativer til CPH-LAB, som hermed får min klare anbefaling!"</blockquote>
+                            <span class="text-xs text-text-primary">– TR Foto, Google Reviews</span>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="w-full bg-card-secondary text-white p-4 py-10 text-center border-b">
+            <h3 class="font-['Lora'] text-grey-500 font-bold lg:text-2xl text-xl">Læs vores anmeldelser</h3>
+            <div class="flex justify-center">
+                <Image src={stars} alt="rating" class="sm:h-full h-2/3 pt-5"/>
+            </div>
+            <div class="block lg:pt-8">
+                <a href="https://www.google.com/maps/place/CPH-LAB/@56.2020009,8.9043941,7z/data=!3m1!4b1!4m6!3m5!1s0x46525386f9339beb:0xca438c908c55dd78!8m2!3d56.23008!4d11.5425!16s%2Fg%2F11frflk7k_?hl=da&entry=tts&shorturl=1" 
+                   target="_blank" 
+                   class="font-['Arial'] underline text-grey-500 hover:text-grey-200 block lg:text-lg text-md">Google Reviews</a>
+                <a href="https://dk.trustpilot.com/review/cph-lab.dk?utm_medium=trustbox&utm_source=MicroReviewCount" 
+                   target="_blank" 
+                   class="font-['Arial'] underline text-grey-500 hover:text-grey-200 block lg:text-lg text-md">Trustpilot</a>    
+            </div>
         </div>
-    </div>
-
-    <div class="flex items-center justify-center">
-        <Image src={anmeldelse2} alt="anmeldelse2"/>
-    </div>
-
-    <div class="flex items-center justify-center">
-        <div class="lg:mx-18 mx-10 text-center">
-            <h4 class="font-['Lora'] text-xl lg:text-2xl font-bold text-text-secondary lg:py-10">Loved by the people</h4>
-            <blockquote class="lg:text-sm text-xs font-Arial italic text-text-primary">"Go service – Venlig betjening – Stærkt håndværk"</blockquote>
-            <span class="text-xs text-text-primary font-Arial">– Thomas, Trustpilot</span>
-            <blockquote class="lg:text-sm text-xs font-Arial italic py-8 text-text-primary">"Som digital prof-hobby-fotograf, med hang til det analoge i fritiden, tør jeg sagtens overlade mine film og negativer til CPH-LAB, som hermed får min klare anbefaling!"</blockquote>
-            <span class="text-xs text-text-primary font-Arial">– TR Foto, Google Reviews</span>    
-    </div>
-</div>
-</article>
-
-<div class="w-full bg-card-secondary text-white p-4 py-10 text-center border-b">
-    <h3 class="font-['Lora'] text-grey-500 font-bold lg:text-2xl text-xl">Læs vores anmeldelser</h3>
-    <div class="flex justify-center">
-        <div>
-            <Image src={stars} alt="rating" class="sm:py-8 sm:h-full h-2/3 pt-5"/>
-        </div>
-    </div>
-    <div class="block">
-        <a href="https://www.google.com/maps/place/CPH-LAB/@56.2020009,8.9043941,7z/data=!3m1!4b1!4m6!3m5!1s0x46525386f9339beb:0xca438c908c55dd78!8m2!3d56.23008!4d11.5425!16s%2Fg%2F11frflk7k_?hl=da&entry=tts&shorturl=1" target="_blank" class="font-['Arial'] underline text-grey-500 hover:text-grey-200 block lg:text-lg text-md">Google</a>
-        <a href="https://dk.trustpilot.com/review/cph-lab.dk?utm_medium=trustbox&utm_source=MicroReviewCount" target="_blank" class="font-['Arial'] underline text-grey-500 hover:text-grey-200 block lg:text-lg text-md">Trustpilot</a>    
-    </div>
-</div>
-</div>
-</div>
-</section>
+        
 
 <!-- Banner -->
 <section class="relative py-22">
     <div class="w-full">
-        <Image src={banner} alt="rating" class="lg:w-[1800px]"/>
+        <Image src={banner} alt="rating" class="lg:w-[1800px] lg:h-full h-[250px]"/>
         <div class="absolute inset-0 flex justify-center text-center items-center top-1/2 left-1/2 w-auto min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2">
-            <div class="bg-grey-500 w-[450px] bg-opacity-40 p-18 font-['Arial'] ">
+            <div class="bg-grey-500 lg:w-[450px] w-[300px] bg-opacity-40 p-5 lg:p-18 font-['Arial'] ">
                 <h2 class="font-['Lora'] font-bold text-xl lg:text-4xl text-text-primary lg:py-10">Fremkaldelser af bedste kvalitet</h2>
                 <p class="text-sm mt-10 lg:text-xl text-text-primary"> 
-                    Vi bruger kun det allerbedste udstyr på markedet, så vi altid kan få det maksimale ud af dine filmbilleder
+                    Vi bruger kun det allerbedste udstyr på markedet, så vi altid kan få det maksimale ud af dine filmbilleder.
                     <br><br>
                     <span class="font-bold">Vi arbejder med:</span><br>
                     Fuji Frontier SP-3000 <br> Fuji Frontier SP-500</p>
@@ -157,6 +143,7 @@ import instagram8 from "../assets/images/insta-8.webp"
         </div>
     </div>
 </section>
+
 
 <!-- Instagram -->
     <a href="https://www.instagram.com/cph.lab" target="_blank">
