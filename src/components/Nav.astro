@@ -5,7 +5,7 @@ import cart from "../assets/icons/cart.svg";
 ---
 
 <div x-data="{ showmenu: false }" class="fixed lg:static w-full">
-  <div id="navbar" class="flex flex-row justify-between border-b px-10 border-grey-100 bg-grey-400">
+  <div id="navbar" class="flex flex-row justify-between border-b px-10 border-card-stroke bg-grey-400">
 
     <div id="logo">
       <a href="#">
@@ -13,24 +13,24 @@ import cart from "../assets/icons/cart.svg";
       </a>
     </div>
 
-    <nav id="desktopmenu" class="hidden lg:block">
-      <ul class="flex flex-row gap-19 px-10 py-15 font-body">
-        <li class="text-grey-100 hover:text-yellow-100 uppercase">
+    <nav id="desktopmenu" class="hidden lg:block font-['Arial']">
+      <ul class="flex flex-row gap-19 px-10 py-15">
+        <li class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out">
           <a href="#">Bestil fremkaldelse</a>
         </li>
-        <li class="text-grey-100 hover:text-yellow-100 uppercase">
+        <li class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out">
           <a href="#">Køb kamera</a>
         </li>
-        <li class="text-grey-100 hover:text-yellow-100 uppercase">
+        <li class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out">
           <a href="#">Services</a>
         </li>
-        <li class="text-grey-100 hover:text-yellow-100 uppercase">
+        <li class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out">
           <a href="#">Analog-guiden</a>
         </li>
-        <li class="text-grey-100 hover:text-yellow-100 uppercase">
+        <li class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out">
           <a href="#">Send til os</a>
         </li>
-        <li class="text-grey-100 hover:text-yellow-100 uppercase">
+        <li class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out">
           <a href="#">Om</a>
         </li>
         <li>
@@ -49,7 +49,7 @@ import cart from "../assets/icons/cart.svg";
     </a>
 </button>
       
-    <button id="burgermenu" class="lg:hidden text-grey-100 hover:text-yellow-100 focus:outline-none" x-on:click="showmenu = !showmenu">
+    <button id="burgermenu" class="lg:hidden text-text-primary hover:text-text-tertiary focus:outline-none" x-on:click="showmenu = !showmenu">
       <svg 
       x-show="!showmenu" 
       class="w-12 h-12" fill="none" 
@@ -86,22 +86,22 @@ import cart from "../assets/icons/cart.svg";
     x-on:click.outside="showmenu = false"
   >
     <ul class="py-14 pl-18">
-      <li class="py-5 uppercase text-grey-100 hover:text-yellow-100">
+      <li class="py-5 uppercase text-text-primary hover:text-text-tertiary">
         <a href="#">Bestil fremkaldelse</a>
       </li>
-      <li class="py-5 uppercase text-grey-100 hover:text-yellow-100">
+      <li class="py-5 uppercase text-text-primary hover:text-text-tertiary">
         <a href="#">Køb kamera</a>
       </li>
-      <li class="py-5 uppercase text-grey-100 hover:text-yellow-100">
+      <li class="py-5 uppercase text-text-primary hover:text-text-tertiary">
         <a href="#">Services</a>
       </li>
-      <li class="py-5 uppercase text-grey-100 hover:text-yellow-100">
+      <li class="py-5 uppercase text-text-primary hover:text-text-tertiary">
         <a href="#">Analog-guiden</a>
       </li>
-      <li class="py-5 uppercase text-grey-100 hover:text-yellow-100">
+      <li class="py-5 uppercase text-text-primary hover:text-text-tertiary">
         <a href="#">Send til os</a>
       </li>
-      <li class="py-5 mb-34 uppercase text-grey-100 hover:text-yellow-100">
+      <li class="py-5 mb-34 uppercase text-text-primary hover:text-text-tertiary">
         <a href="#">Om</a>
       </li>
     </ul>

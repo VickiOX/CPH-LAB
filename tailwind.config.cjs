@@ -135,6 +135,10 @@ module.exports = {
         text_card: {
           price: "#B5B3B0",
         },
+
+        dropShadow: {
+          'custom': '0 10px 2px rgba(32, 34, 31, 1)', 
+        }
       },
     },
   },
