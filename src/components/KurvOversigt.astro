@@ -1,0 +1,15 @@
+---
+const {img, price, title, text} = Astro.props;
+---
+<div class="grid grid-cols-3 bg-card-primary border border-card-stroke px-6 py-4 ">
+
+<div class="span-cols-1">
+    <img class="w-[62px] h-[62px] lg:w-[80px] lg:h-[70px]" src={img}>
+</div>
+
+<div class="span-cols-2 text-text-primary lg:mx-0">
+<p class="text-text-primary text-mobilsm lg:text-md font-bold font-[body]">{price}</p>
+<p class="text-text_card-price text-cartmobilxs lg:text-sm font-[body]">{title}</p>
+<p class="text-text-primary text-cartmobilxs lg:text-sm font-[body]">{text}</p>
+</div>
+</div>
