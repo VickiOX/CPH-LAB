@@ -10,7 +10,6 @@ module.exports = {
 
   theme: {
     fontSize: {
-<<<<<<< HEAD
       breadcrumb_buttontext_mobil_xxs: "10px",
       cart_mobil_xs: "12px",
       mobil_sm: "14px",
@@ -20,17 +19,6 @@ module.exports = {
       mobil_2xl: "24px",
       mobil_3xl: "26px",
       mobil_4xl: "32px",
-=======
-      breadcrumbbuttontextmobilxxs: "10px",
-      cartmobilxs: ["12px"],
-      mobilsm: ["14px"],
-      mobilmd: ["16px"],
-      mobillg: ["18px"],
-      mobilxl: ["20px"],
-      mobil2xl: ["24px"],
-      mobil3xl: ["26px"],
-      mobil4xl: ["32px"],
->>>>>>> edit-v2
 
       xxs: "10px",
       xs: "12px",
