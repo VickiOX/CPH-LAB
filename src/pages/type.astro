@@ -36,8 +36,8 @@ import FremkalType from "../components/FremkalType.astro";
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-12 lg:-mt-10 lg:text-5xl">Fremkaldelsestype</h1>
-	<h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-3xl lg:pt-6">Vælg hvordan du ønsker billederne fremkaldt</h2>
+	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] italic font-bold pt-12 lg:-mt-10 lg:text-5xl">Fremkaldelsestype</h1>
+	<h2 class="text-text-secondary text-center italic font-bold font-['Lora'] text-xl lg:text-3xl lg:pt-6">Vælg hvordan du ønsker billederne fremkaldt</h2>
 
 	<!-- Card af fremkaldelsestype -->
     <div class="lg:grid lg:grid-cols-3 lg:mx-0 lg:relative lg:left-29 lg:pt-16">
@@ -50,7 +50,7 @@ import FremkalType from "../components/FremkalType.astro";
     </div>
     </div>
 
-    <div class="mx-19 pt-10 lg:py-5 ">
+    <div class="mx-19 pt-10 lg:py-5 lg:mx-17 lg:ml-17 ">
     <FremkalType img="src/assets/images/digitale-foto.webp" alt="digitale foto" imgto="src/assets/images/papirfoto.webp" alt="papirfoto" title="Digitale + printede billeder" price="+210 kr."/>
     </div>
 </div>
@@ -81,15 +81,18 @@ import FremkalType from "../components/FremkalType.astro";
 			
 		 
 				<!-- Tilbage knap -->
-				<a href="/size">
-				<Button variant="secondary" size="small">Tilbage</Button>
-				</a>
-	  
-				<!-- Fortsæt knap -->
-				<a href="/kvalitet">
-				<Button variant="primary" size="small">Fortsæt</Button>
-				</a>
-	
+				<div class="flex justify-center mx-0">
+					<a href="/size">
+					<Button variant="secondary" size="small">Tilbage</Button>
+					</a>
+				</div>
+		  
+					<!-- Fortsæt knap -->
+					<div class="flex justify-center mx-0">
+					<a href="/kvalitet">
+					<Button variant="primary" size="small">Fortsæt</Button>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>

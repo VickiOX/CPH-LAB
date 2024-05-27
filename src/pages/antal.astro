@@ -34,14 +34,14 @@ import BestilCard from "../components/BestilCard.astro";
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-12 lg:-mt-12 lg:text-5xl">Kvantitet</h1>
+	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] italic font-bold pt-12 lg:-mt-12 lg:text-5xl">Kvantitet</h1>
 
 
 	<!-- Card af filmruller -->
 	<section class="mx-11">
-        <h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-3xl lg:pt-8">Vælg antal filmruller</h2>
+        <h2 class="text-text-secondary text-center font-['Lora'] italic font-bold text-xl lg:text-3xl lg:pt-8">Vælg antal filmruller</h2>
 
-    <div class="flex justify-center">
+    <div class="flex justify-center pt-10 ">
 		<div class="grid grid-cols-3 gap-9 lg:gap-20 lg:pt-14">
          
 		<BestilCard img="src/assets/images/enkelt.webp" alt="large" title="1 stk."/>
@@ -85,16 +85,19 @@ import BestilCard from "../components/BestilCard.astro";
 <div class="lg:hidden">
     <div class="grid grid-cols-2 pt-19 gap-6 mx-10">
         
-     
-            <!-- Tilbage knap -->
-			<a href="/kvalitet">
-            <Button variant="secondary" size="small">Tilbage</Button>
-			</a>
-  
-            <!-- Fortsæt knap -->
-			<a href="/kurv">
-            <Button variant="primary" size="small">Fortsæt</Button>
-			</a>
+     <!-- Tilbage knap -->
+				<div class="flex justify-center mx-0">
+					<a href="/kvalitet">
+					<Button variant="secondary" size="small">Tilbage</Button>
+					</a>
+				</div>
+		  
+					<!-- Fortsæt knap -->
+					<div class="flex justify-center mx-0">
+					<a href="/kurv">
+					<Button variant="primary" size="small">Fortsæt</Button>
+					</a>
+				</div>
 
         </div>
     </div>
