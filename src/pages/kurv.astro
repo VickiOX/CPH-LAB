@@ -35,12 +35,12 @@ import Ialt from "../components/Ialt.astro";
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-12 lg:-mt-10 lg:text-5xl lg:pt-4">Kurv</h1>
+	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] italic font-bold pt-12 lg:-mt-10 lg:text-5xl lg:pt-4">Kurv</h1>
 
 
 	<!-- Card af filmruller -->
 	<section class="mx-11">
-        <h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-3xl lg:pt-6">Dine fremkaldelsesvalg</h2>
+        <h2 class="text-text-secondary text-center font-['Lora'] italic font-bold text-xl lg:text-3xl lg:pt-6">Dine fremkaldelsesvalg</h2>
 
         <div class="flex justify-center">
          <div class="mx-0 lg:mx-32 lg:pt-10 pt-12">
@@ -95,14 +95,18 @@ import Ialt from "../components/Ialt.astro";
         
      
             <!-- Tilbage knap -->
-            <a href="/antal">
-            <Button variant="secondary" size="small">Tilbage</Button>
-            </a>
-  
-            <!-- Shop videre knap -->
-            <a href="/fremkaldelse">
-            <Button variant="secondary" size="small">Shop videre</Button>
-            </a>
+				<div class="flex justify-center mx-0">
+                    <a href="/antal">
+                    <Button variant="secondary" size="small">Tilbage</Button>
+                    </a>
+                </div>
+          
+                    <!-- Fortsæt knap -->
+                    <div class="flex justify-center mx-0">
+                    <a href="/betaling">
+                    <Button variant="secondary" size="small">Fortsæt</Button>
+                    </a>
+                </div>
 
         </div>
     </div>
