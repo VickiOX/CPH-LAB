@@ -15,62 +15,63 @@ import William from "../assets/images/William-Green.webp";
 ---
 <MainLayout title="CPH-Lab">
 
-  <section class="sektion1 analogErIkkeDødt pt-22 md:-mt-22 ">
-    
-    <div class="video-container relative ">
 
-      <div class="block md:hidden"> 
-        <video width="100%" height="413" autoplay muted loop>
-          <source src="https://video.wixstatic.com/video/392078_3023cbdc223541459d96c48212615446/480p/mp4/file.mp4" type="video/mp4">
-        </video>
-      </div>
+<!-- Sektion 1 – Hero units -->
+<!-- Hero sektion -->
+<div class="w-full relative hidden lg:block">
+  <div class="w-full lg:h-[500px] flex items-center justify-center overflow-hidden relative">
+    <video width="100%" height="413" autoplay muted loop>
+      <source src="https://video.wixstatic.com/video/392078_3023cbdc223541459d96c48212615446/480p/mp4/file.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+    <h1 class="lg:mt-34 uppercase pt-10 font-[Lora] font-bold text-text-secondary text-4xl lg:text-6xl pb-12 relative">Analog er ikke dødt.</h1>
+  </div>
+</div>
 
-      <div class="md:block hidden">
-        <video width="100%" height="550" autoplay muted loop>
-          <source src="https://video.wixstatic.com/video/392078_3023cbdc223541459d96c48212615446/480p/mp4/file.mp4" type="video/mp4">
-        </video>
-      </div>
-     
-      <div class="text-overlay absolute left-1 right-1 top-24 md:top-34 mt-16   ">
-        <h1 class="font-serif   text-[32px] md:text-6xl text-text-secondary text-center ">
-          ANALOG ER IKKE DØDT
-        </h1>
-      </div>
+  <!-- Hero unit mobil-->
+  <div class="pt-22 w-full relative lg:hidden">
+    <div class="w-full lg:h-[500px] flex items-center justify-center overflow-hidden">
+      <video width="100%" height="413" autoplay muted loop>
+        <source src="https://video.wixstatic.com/video/392078_3023cbdc223541459d96c48212615446/480p/mp4/file.mp4" type="video/mp4">
+      </video>    
     </div>
-  </section>
+    <div class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+      <h1 class="mt-32 uppercase pt-10 font-[Lora] font-bold text-text-secondary text-4xl lg:text-6xl pb-12 relative ">Analog er ikke dødt.</h1>
+    </div>
+  </div>
 
-  <section class="sektion2 analogErIkkeDødtText font-body  mobil_md md:text-2xl text-text-primary pt-16 md:pt-22 px-20 md:w-[500px] text-center mx-auto sticky">
+<!-- Sektion 2 -->
+  <section class="font-['Lora'] italic sektion2 analogErIkkeDødtText font-body  mobil_md md:text-2xl text-text-primary pt-16 md:pt-22 px-20 md:w-2/3 text-center mx-auto sticky">
     <div class="sticky items-center top-40">
-        <p class="pt-10">Analog fotografi, også kendt som filmfotografi, har en unik æstetik og autentisk charme. Det er en praksis, der kræver omhu og opmærksomhed, men til gengæld belønner med en unik kvalitet, autencitet og en håndværksmæssig proces.</p>
+        <p class="pt-10 leading-relaxed">Analog fotografi, også kendt som filmfotografi, har en unik æstetik og autentisk charme. Det er en praksis, der kræver omhu og opmærksomhed, men til gengæld belønner med en unik kvalitet, autencitet og en håndværksmæssig proces.</p>
     </div>
-    <div class="items-center sticky top-52  ">
-        <p class="pt-10">Dets fascinerende historie strækker sig tilbage før det digitale kameras opfindelse. Fra 1800-tallet til i dag ser vi stadig en værdsættelse af det langsomme, charmerende og omhyggelige håndværk.</p>
+    <div class="items-center sticky top-52">
+        <p class="pt-10 leading-relaxed">Dets fascinerende historie strækker sig tilbage før det digitale kameras opfindelse. Fra 1800-tallet til i dag ser vi stadig en værdsættelse af det langsomme, charmerende og omhyggelige håndværk.</p>
     </div>
-    
   </section>
 
-
-<!-- fadein animaiton på h3 på section 3-5 -->
-
+<!-- fadein animaiton på H3 på section 3-5 -->
   <section class="sektion3 hvorDetHeleStartede pt-22 relative ">
     <div class="grid grid-cols-2 pb-[200px] md:pb-[480px] overflow-hidden">
       <div class="md:px-24 md:w-[800px] ">
-        <h2 class="font-serif text-text-primary font-bold italic md:text-4xl text-[20px] pl-8 w-[300px]">
+        <h2 class="font-['Lora'] text-text-primary font-bold italic md:text-4xl text-[20px] pl-8">
           Hvor det hele startede...
         </h2>
-        <div class="gulOverskrift border border-card-stroke w-[100px]  md:w-[400px] ml-[-21px]  md:ml-[-200px] ">
-          <h3 class="font-serif text-text-secondary font-bold md:text-4xl text-[24px] ">
+
+        <div class="my-10 lg:py-5 gulOverskrift border border-card-stroke w-[100px] md:w-[400px] ml-[-21px]  md:ml-[-200px] ">
+          <h3 class="py-2 px-5 font-['Lora'] text-text-secondary font-bold md:text-4xl text-[24px] ">
             1828
           </h3>
         </div>
+
         <div
-          class="font-Arial text-mobilxxs md:text-xl text-text-primary w-[250px] md:w-[400px] mobil_sm pl-8">
-          <p>
-            Analog fotografi opstod i midten af 1800-tallet med opdagelsen af
+          class="font-['Arial'] text-mobilxxs md:text-xl text-text-primary w-[250px] md:w-[400px] mobil_sm pl-8">
+          <p class="leading-relaxed">Analog fotografi opstod i midten af 1800-tallet med opdagelsen af
             fotokemiske processer, der tillod lys at interagere med kemikalier
             på filmoverfladen for at skabe et billede.
           </p>
-          <p>
+          <p class="mt-12 leading-relaxed">
             Det første fotografi, kaldet La Cour Du Domaine Du Gras, blev skabt
             af Nicéphore Niépce i 1826 og viser en udsigt fra et vindue i hans
             hus i Frankrig.
@@ -85,7 +86,7 @@ import William from "../assets/images/William-Green.webp";
     </div>
     
    <div class="overflow-hidden ">
-        <Image src={filmrulle1} alt="" class=" w-screen md:w-screen absolute  top-[280px] md:top-1"/>
+        <Image src={filmrulle1} alt="" class="pointer-events-none  w-screen md:w-screen absolute  top-[280px] md:top-1"/>
     </div>
     
 
@@ -94,36 +95,34 @@ import William from "../assets/images/William-Green.webp";
         <Image src={Eastman} alt="" class=" w-[100px] md:w-34 md:ml-24  ml-[60px]" />
       </div>
 
-      <div class=" md:w-[625px] md:ml-60 md:pl-10 ">
-        <div class="gulOverskrift border border-card-stroke  md:w-screen -mr-[21px] z-10">
-          <h3 class="font-serif text-text-secondary font-bold md:text-4xl text-[24px]">
+      <div class="md:w-[625px] md:ml-60 md:pl-10 ">
+        <div class="my-10 lg:py-5 gulOverskrift border border-card-stroke  md:w-screen -mr-[21px] z-10">
+          <h3 class="py-2 px-5 font-['Lora'] text-text-secondary font-bold md:text-4xl text-[24px]">
             1888
           </h3>
         </div>
-        <div class="font-Arial md:text-xl text-text-primary pr-4 md:w-[400px] mobil_sm">
-            <p >
+        <div class="font-['Arial'] md:text-xl text-text-primary pr-4 md:w-[400px] mobil_sm">
+            <p class="leading-relaxed">
                 George Eastmans opfindelse af filmrullen i 1888 revolutionerede
                 fotografiets verden ved at gøre det lettere at tage flere billeder
                 uden at skifte plader. Mørkekammerprocessen var den primære metode til
                 at udvikle film, som krævende omhyggelighed og ekspertise.
               </p>
-              <p >
+              <p class="mt-12 leading-relaxed">
                 I det 20. århundrede blev adgangen til analog fotografi gradvist mere
                 almindelig og tilgængelig for almindelige mennesker, da kameraer blev
                 mindre og mere overkommelige.
               </p>
         </div>
-        
       </div>
     </div>
   </section>
 
-  
 
 
   <section class="sektion4 digitalRevolution pt-22 overflow-hidden">
-    <div class="gulOverskrift border border-card-stroke w-[350px] md:w-[800px] md:ml-[-200px] ml-[-21px] z-10 ">
-      <h3 class="font-serif text-text-secondary font-bold md:text-4xl text-[24px]">
+    <div class="lg:py-5 gulOverskrift border border-card-stroke w-[350px] md:w-[800px] md:ml-[-200px] ml-[-21px] z-10 ">
+      <h3 class="py-2 px-5 font-['Lora'] text-text-secondary font-bold md:text-4xl text-[24px]">
         Den Digitale Revolution
       </h3>
     </div>
@@ -152,9 +151,9 @@ import William from "../assets/images/William-Green.webp";
     <div class="md:grid md:grid-cols-2 md:pb-[480px] overflow-hidden">
       <div></div>
       <div>
-        <h2 class="font-serif text-text-primary font-bold italic md:text-4xl text-[20px] pl-8">Hvor det blev retro...</h2>
+        <h2 class="font-['Lora'] text-text-primary font-bold italic md:text-4xl text-[20px] pl-8">Hvor det blev retro...</h2>
         <div class="gulOverskrift border border-card-stroke w-[330px] md:w-screen -ml-[10px] z-10 ">
-          <h3 class="font-serif text-text-secondary font-bold md:text-4xl text-[24px]" >Den digitale tidsalder</h3>
+          <h3 class="font-['Lora'] text-text-secondary font-bold md:text-4xl text-[24px]" >Den digitale tidsalder</h3>
         </div>
         <p class="text-text-primary mobil_sm md:text-xl pl-8">Selvom digital fotografi har domineret markedet siden 1990'erne på grund af dets bekvemmelighed og hurtige resultater, forbliver analog fotografi populært blandt dem der værdsætter det unikke udtryk og den håndværksmæssige proces.</p>
         <p class="text-text-primary mobil_sm md:text-xl pb-32 pl-8">Både erfarne fotografer og unge entusiaster ser det som en modreaktion mod den manipulerede virkelighed, som digitale medier har skabt, og ser stor værdi i det retro udtryk og den omhu som er forbunden med den analoge praksis. </p>
@@ -166,9 +165,9 @@ import William from "../assets/images/William-Green.webp";
     </div>
     
     <div>
-      <h2 class="font-serif text-text-primary font-bold italic md:text-4xl text-[20px] pl-8">Hvor er vi nu...</h2>
+      <h2 class="font-['Lora'] text-text-primary font-bold italic md:text-4xl text-[20px] pl-8">Hvor er vi nu...</h2>
       <div class=" gulOverskrift border border-card-stroke md:w-[330px]  ml-[-40px] ">
-        <h3 class="font-serif text-text-secondary font-bold  md:text-4xl text-[24px]">2024</h3>
+        <h3 class="font-['Lora'] text-text-secondary font-bold  md:text-4xl text-[24px]">2024</h3>
       </div>
       <div class="paragraf sektion md:grid md:grid-cols-2 text-text-primary mobil_sm md:text-xl pl-8">
         <div class="">
@@ -196,7 +195,7 @@ import William from "../assets/images/William-Green.webp";
   <!-- 
   <div>
   <section class="sektion7 pt-22 sticky">
-    <h2 class="font-serif text-text-primary font-bold italic md:text-4xl md:pl-24 pl-16  text-[20px]">Mød menneskerne bag</h2>
+    <h2 class="font-['Lora'] text-text-primary font-bold italic md:text-4xl md:pl-24 pl-16  text-[20px]">Mød menneskerne bag</h2>
 
     <div class=" md:grid md:grid-cols-2 sticky top-0 h-screen" id=""> 
       <div class="Benny   crossfadeimages">
@@ -206,7 +205,7 @@ import William from "../assets/images/William-Green.webp";
       </div>
       <div class=" mt-6 md:mt-[360px]">
         <div class="gulOverskrift border border-card-stroke w-[100px]  md:w-screen -ml-[21px] z-10">
-          <h3 class="font-serif text-text-secondary font-bold text-[20px] md:text-4xl fadeInRight3">Benny Thelin</h3>
+          <h3 class="font-['Lora'] text-text-secondary font-bold text-[20px] md:text-4xl fadeInRight3">Benny Thelin</h3>
         </div>
         <div class="text-text-primary md:text-xl mobil_md pl-16 w-[320px] fadeIn1 ">
         <p class="pb-12">Benny Thelin er ejer af film-labbet, lab-ansvarlig og indehaver af Hørsholm Foto.</p>
@@ -224,7 +223,7 @@ import William from "../assets/images/William-Green.webp";
     </div>
     <div class="mt-[360px]">
       <div class="gulOverskrift border border-card-stroke w-[100px] md:w-screen -mr-10px z-10">
-        <h3 class="font-serif text-text-secondary font-bold  md:text-4xl">Emil Basse</h3>
+        <h3 class="font-['Lora'] text-text-secondary font-bold  md:text-4xl">Emil Basse</h3>
       </div>
       <div class="text-text-primary text-xl">
         <p>Emil Basse er stifter af CPH-LAB. <br> Markedsføring og kommunikation.</p>
@@ -241,7 +240,7 @@ import William from "../assets/images/William-Green.webp";
     </div>
     <div class="mt-[360px]">
       <div class="gulOverskrift border border-card-stroke w-[100px] md:w-screen -mr-10px  z-10">
-        <h3 class="font-serif text-text-secondary font-bold  md:text-4xl">William Green</h3>
+        <h3 class="font-['Lora'] text-text-secondary font-bold  md:text-4xl">William Green</h3>
       </div>
       <div class="text-text-primary text-xl"> 
         <p class="">William Green lab-medhjælper og professionel fotograf. <a href="https://www.instagram.com/williamgreenphotos/">@williamgreenphotos</a></p>
