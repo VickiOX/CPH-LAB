@@ -137,8 +137,8 @@ module.exports = {
         },
 
         dropShadow: {
-          'custom': '0 10px 2px rgba(32, 34, 31, 1)', 
-        }
+          custom: "0 10px 2px rgba(32, 34, 31, 1)",
+        },
       },
     },
   },
