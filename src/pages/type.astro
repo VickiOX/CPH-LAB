@@ -36,8 +36,8 @@ import FremkalType from "../components/FremkalType.astro";
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-12 lg:text-5xl">Fremkaldelsestype</h1>
-	<h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-4xl">Vælg hvordan du ønsker billederne fremkaldt</h2>
+	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-12 lg:-mt-10 lg:text-5xl">Fremkaldelsestype</h1>
+	<h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-3xl lg:pt-6">Vælg hvordan du ønsker billederne fremkaldt</h2>
 
 	<!-- Card af fremkaldelsestype -->
     <div class="lg:grid lg:grid-cols-3 lg:mx-0 lg:relative lg:left-29 lg:pt-16">
@@ -61,12 +61,16 @@ import FremkalType from "../components/FremkalType.astro";
 	<div class="grid grid-cols-2 pt-6">
 		<!-- Tilbage knap -->
 		<div class="flex justify-start mx-22">
-		<Button variant="secondary" size="medium">Fortsæt</Button>
+			<a href="/size">
+		<Button variant="secondary" size="medium">Tilbage</Button>
+			</a>
 		</div>
 	
 		<!-- Fortsæt knap -->
 		<div class="flex justify-end mx-22">
+			<a href="/kvalitet">
 		<Button variant="primary" size="medium">Fortsæt</Button>
+			</a>
 		</div>
 	</div>
 	</div>
@@ -77,10 +81,14 @@ import FremkalType from "../components/FremkalType.astro";
 			
 		 
 				<!-- Tilbage knap -->
-				<Button variant="secondary" size="small">Fortsæt</Button>
+				<a href="/size">
+				<Button variant="secondary" size="small">Tilbage</Button>
+				</a>
 	  
 				<!-- Fortsæt knap -->
+				<a href="/kvalitet">
 				<Button variant="primary" size="small">Fortsæt</Button>
+				</a>
 	
 			</div>
 		</div>

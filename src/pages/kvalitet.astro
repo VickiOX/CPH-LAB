@@ -35,12 +35,12 @@ import Papir from "../components/Papir.astro";
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-12 lg:text-5xl">Opløsning</h1>
+	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-12 lg:-mt-10 lg:text-5xl">Opløsning</h1>
 
 
 	<!-- Card af filmruller -->
 	<section class="mx-11">
-        <h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-4xl">Vælg scan kvalitet</h2>
+        <h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-3xl lg:pt-8">Vælg scan kvalitet</h2>
 
     <div class="flex justify-center">
 		<div class="grid grid-cols-3 gap-9 lg:gap-20 lg:pt-14 pt-12">
@@ -55,7 +55,7 @@ import Papir from "../components/Papir.astro";
 </section>
 
 <section>
-<h2 class="text-text-secondary text-center pt-15 font-['Lora'] text-xl lg:text-4xl lg:pt-20">Vælg papirtype</h2>
+<h2 class="text-text-secondary text-center pt-15 font-['Lora'] text-xl lg:text-3xl lg:pt-18">Vælg papirtype</h2>
 
 <div class="flex justify-center">
 <div class="grid grid-cols-2 text-text-primary text-center mx-10 gap-11 lg:mx-22 lg:gap-18">
@@ -77,12 +77,16 @@ import Papir from "../components/Papir.astro";
 <div class="grid grid-cols-2 pt-6">
     <!-- Tilbage knap -->
     <div class="flex justify-start mx-22">
+		<a href="/type">
     <Button variant="secondary" size="medium">Tilbage</Button>
+		</a>
     </div>
 
     <!-- Fortsæt knap -->
     <div class="flex justify-end mx-22">
+		<a href="/antal">
     <Button variant="primary" size="medium">Fortsæt</Button>
+		</a>
     </div>
 </div>
 </div>
@@ -93,10 +97,14 @@ import Papir from "../components/Papir.astro";
         
      
             <!-- Tilbage knap -->
+			<a href="/type">
             <Button variant="secondary" size="small">Tilbage</Button>
+			</a>
   
             <!-- Fortsæt knap -->
+			<a href="/antal">
             <Button variant="primary" size="small">Fortsæt</Button>
+			</a>
 
         </div>
     </div>

@@ -4,6 +4,7 @@ import cart from "../assets/icons/cart.svg";
 ---
 
 <div x-data="{ showmenu: false }" class="fixed lg:static w-full z-50">
+
   <div
     id="navbar"
     class="flex flex-row justify-between border-b px-10 border-card-stroke bg-grey-400"
@@ -12,15 +13,23 @@ import cart from "../assets/icons/cart.svg";
     <div
       id="logo"
       class="h-[60px] w-[166px] bg-[url('/logo.svg')] hover:bg-[url('/logo_hover.svg')] bg-cover transition duration-400 ease-in-out my-10">
+
+  <div id="navbar" class="flex flex-row justify-between border-b px-10 border-card-stroke bg-grey-400">
+
+    <div id="logo">
+      <a href="#index">
+        <Image src={logo} alt="logo" class="py-10 w-25" />
+      </a>
+
     </div>
   </a>
 
     <nav id="desktopmenu" class="hidden lg:block font-['Arial']">
       <ul class="flex flex-row gap-19 px-10 py-15">
-        <li
-          class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out"
-        >
-          <a href="#">Bestil fremkaldelse</a>
+
+        <li class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out">
+          <a href="/fremkaldelse">Bestil fremkaldelse</a>
+
         </li>
         <li
           class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out"
@@ -42,10 +51,10 @@ import cart from "../assets/icons/cart.svg";
         >
           <a href="#">Send til os</a>
         </li>
-        <li
-          class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out"
-        >
-          <a href="#">Om</a>
+
+        <li class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out">
+          <a href="/om">Om</a>
+
         </li>
         <li>
           <button>
@@ -107,10 +116,10 @@ import cart from "../assets/icons/cart.svg";
     x-on:click.outside="showmenu = false"
   >
     <ul class="py-14 pl-15">
-      <li
-        class="py-5 uppercase text-text-primary hover:text-text-tertiary transition duration-400 ease-in-out"
-      >
-        <a href="#">Bestil fremkaldelse</a>
+
+      <li class="py-5 uppercase text-text-primary hover:text-text-tertiary transition duration-400 ease-in-out">
+        <a href="/fremkaldelse">Bestil fremkaldelse</a>
+
       </li>
       <li
         class="py-5 uppercase text-text-primary hover:text-text-tertiary transition duration-400 ease-in-out"
@@ -132,10 +141,10 @@ import cart from "../assets/icons/cart.svg";
       >
         <a href="#">Send til os</a>
       </li>
-      <li
-        class="py-5 mb-34 uppercase text-text-primary hover:text-text-tertiary transition duration-400 ease-in-out"
-      >
-        <a href="#">Om</a>
+
+      <li class="py-5 mb-34 uppercase text-text-primary hover:text-text-tertiary transition duration-400 ease-in-out">
+        <a href="/om">Om</a>
+
       </li>
     </ul>
   </nav>
