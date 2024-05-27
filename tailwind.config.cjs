@@ -11,14 +11,14 @@ module.exports = {
   theme: {
     fontSize: {
       breadcrumbbuttontextmobilxxs: "10px",
-      cartmobilxs: "12px",
-      mobilsm: "14px",
-      mobilmd: "16px",
-      mobillg: "18px",
-      mobilxl: "20px",
-      mobil2xl: "24px",
-      mobil3xl: "26px",
-      mobil4xl: "32px",
+      cartmobilxs: ["12px"],
+      mobilsm: ["14px"],
+      mobilmd: ["16px"],
+      mobillg: ["18px"],
+      mobilxl: ["20px"],
+      mobil2xl: ["24px"],
+      mobil3xl: ["26px"],
+      mobil4xl: ["32px"],
 
       xxs: "10px",
       xs: "12px",
@@ -137,8 +137,8 @@ module.exports = {
         },
 
         dropShadow: {
-          'custom': '0 10px 2px rgba(32, 34, 31, 1)', 
-        }
+          custom: "0 10px 2px rgba(32, 34, 31, 1)",
+        },
       },
     },
   },
