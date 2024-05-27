@@ -2,7 +2,8 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
-import filmruller from "../assets/images/filmruller.webp";
+import HvorforOs1 from "../assets/images/filmruller1.webp";
+import HvorforOs2 from "../assets/images/filmruller2.webp";
 import filmrulle1 from "../assets/images/filmrulle-1.webp";
 import filmrulle2 from "../assets/images/filmrulle-2.webp";
 import filmrulleom from "../assets/images/filmrulle-om.webp";
@@ -230,7 +231,7 @@ import William from "../assets/images/William-Green.webp";
 
     <div class="relative w-screen flex">
       <Image
-        class="h-[500px] w-screen object-cover md:w-screen"
+        class="h-[800px] w-screen object-cover md:w-screen"
         src={ensomComputer2}
         alt="Retro Apple Computer"
       />
@@ -505,11 +506,40 @@ import William from "../assets/images/William-Green.webp";
 </div>
 -->
 
-  <section class="sektion8 pt-22 font-['Lora'] text-text-primary">
+<!-- Desktop -->
+  <section class="sektion8 pt-22 font-['Lora'] text-text-primary md:block hidden">
     <div class="relative w-screen flex">
       <Image
         class="w-full opacity-70 lg:h-[600px] flex items-center justify-center overflow-hidden relative"
-        src={filmruller}
+        src={HvorforOs1}
+        alt="Random image"
+      />
+      <div
+        class="absolute inset-0 md:w-auto w-[400px] justify-center text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        <h1 class="md:text-6xl text-2xl font-bold pb-17 font- italic">
+          Hvorfor CPH-LAB?
+        </h1>
+        <p class="mobil_md md:text-2xl pb-14">
+          Hos CPH-LAB elsker vi fotografi og vil hjælpe med at bevare dine
+          minder. Analoge medier falmer desværre med tiden <br />
+          – få dem digitaliseret og sikret til fremtiden.
+        </p>
+        <p class="mobil_md md:text-2xl">
+          Med 25 års erfaring tilbyder vi altid professionel service og
+          håndtering samt sikker forsendelse, hurtig levering og personlig
+          rådgivning.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobil -->
+  <section class="sektion8 pt-22 font-['Lora'] text-text-primary md:hidden block">
+    <div class="relative w-screen flex">
+      <Image
+        class="w-full opacity-70 lg:h-[600px] flex items-center justify-center overflow-hidden relative"
+        src={HvorforOs2}
         alt="Random image"
       />
       <div
