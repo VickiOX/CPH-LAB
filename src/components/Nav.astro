@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import cart from "../assets/icons/cart.svg";
 ---
 
-<div x-data="{ showmenu: false }" class="fixed lg:static w-full z-50">
+<div x-data="{ showmenu: false }" class="fixed md:static w-full z-50">
 
   <div
     id="navbar"
@@ -17,7 +17,7 @@ import cart from "../assets/icons/cart.svg";
   </a>
 
 
-    <nav id="desktopmenu" class="hidden lg:block font-['Arial']">
+    <nav id="desktopmenu" class="hidden md:block font-['Arial']">
       <ul class="flex flex-row gap-19 px-10 py-15">
 
         <li class="text-text-primary hover:text-text-tertiary uppercase transition duration-400 ease-in-out">
@@ -55,22 +55,29 @@ import cart from "../assets/icons/cart.svg";
         <li>
           <button>
             <a href="#">
-              <Image src={cart} alt="cart" />
+              <div
+              id="logo"
+              class="mt-2 w-[20px] h-[20px] bg-[url('/cart.svg')] hover:bg-[url('/cart_hover.svg')] bg-cover transition duration-400 ease-in-out">
+            </div>
             </a>
           </button>
+
         </li>
       </ul>
     </nav>
 
-    <button class="lg:hidden ml-23">
+    <button class="md:hidden ml-23">
       <a href="#">
-        <Image src={cart} alt="cart" />
+        <div
+        id="logo"
+        class="mt-2 w-[20px] h-[20px] bg-[url('/cart.svg')] hover:bg-[url('/cart_hover.svg')] bg-cover transition duration-400 ease-in-out">
+      </div>
       </a>
     </button>
 
     <button
       id="burgermenu"
-      class="lg:hidden text-text-primary hover:text-text-tertiary transition duration-400 ease-in-out focus:outline-none"
+      class="md:hidden text-text-primary hover:text-text-tertiary transition duration-400 ease-in-out focus:outline-none"
       x-on:click="showmenu = !showmenu"
     >
       <svg
@@ -106,7 +113,7 @@ import cart from "../assets/icons/cart.svg";
 
   <nav
     id="mobilmenu"
-    class="flex bg-grey-400 flex-col content-center pt-4 lg:hidden"
+    class="flex bg-grey-400 flex-col content-center pt-4 md:hidden"
     x-show="showmenu"
     x-transition
     x-on:click.outside="showmenu = false"

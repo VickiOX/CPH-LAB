@@ -7,18 +7,18 @@ import Button from "../components/Button.astro";
 
 <div>
   <footer
-    class="border-t font-['Arial'] border-text-primary max-w-full pt-14 flex lg:justify-center"
+    class="border-t font-['Arial'] border-text-primary max-w-full pt-14 flex md:justify-center"
   >
     <div
-      class="w-full max-w-screen-lg grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-26"
+      class="w-full max-w-screen-lg grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-26"
     >
-      <div class="col-span-1 text-center lg:text-left order-3 md:order-1">
+      <div class="col-span-1 text-center md:text-left order-3 md:order-1">
         <h2
-          class="text-lg lg:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase lg:py-12"
+          class="text-lg md:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase md:py-12"
         >
           Kontakt
         </h2>
-        <ul class="text-text-primary lg:text-lg text-sm lg:leading leading-6">
+        <ul class="text-text-primary md:text-lg text-sm md:leading leading-6">
           <li
             class="hover:text-text-tertiary underline transition duration-400 ease-in-out"
           >
@@ -33,31 +33,30 @@ import Button from "../components/Button.astro";
             <li><a href="#"></a>Hovedgaden 12 <br /> 2970 Hørsholm</li>
           </a>
         </ul>
-        <div class="flex gap-6 lg:justify-start justify-center py-10">
-          <a href="https://www.facebook.com/CPHLABDK" target="_blank">
-            <Image
-              src={Instagram}
-              alt="Instagram logo"
-              class="hover:brightness-50"
-            />
-          </a>
+        <div class="flex gap-6 md:justify-start justify-center">
           <a href="https://www.instagram.com/cph.lab" target="_blank">
-            <Image
-              src={Facebook}
-              alt="Facebook logo"
-              class="hover:brightness-50"
-            />
+            <div
+            id="Instagram logo"
+            class="w-[20px] h-[20px] bg-[url('/instagram.svg')] hover:bg-[url('/instagram_hover.svg')] bg-cover transition duration-400 ease-in-out my-10">
+          </div>
+          </a>
+
+          <a href="https://www.facebook.com/CPHLABDK" target="_blank">
+            <div
+            id="Facebook logo"
+            class="w-[10px] h-[20px] bg-[url('/facebook.svg')] hover:bg-[url('/facebook_hover.svg')] bg-cover transition duration-400 ease-in-out my-10">
+          </div>
           </a>
         </div>
       </div>
 
-      <div class="col-span-1 text-center lg:text-center order-1 md:order-2">
+      <div class="col-span-1 text-center md:text-center order-1 md:order-2">
         <h2
-          class="text-lg lg:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase lg:py-12"
+          class="text-lg md:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase md:py-12"
         >
           Services
         </h2>
-        <ul class="text-text-primary lg:text-lg text-sm lg:leading leading-6">
+        <ul class="text-text-primary md:text-lg text-sm md:leading leading-6">
           <li
             class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
           >
@@ -86,13 +85,13 @@ import Button from "../components/Button.astro";
         </ul>
       </div>
 
-      <div class="col-span-1 text-center lg:text-right order-2 md:order-3">
+      <div class="col-span-1 text-center md:text-right order-2 md:order-3">
         <h2
-          class="text-lg lg:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase lg:py-12"
+          class="text-lg md:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase md:py-12"
         >
           Information
         </h2>
-        <ul class="text-text-primary lg:text-lg text-sm lg:leading leading-6">
+        <ul class="text-text-primary md:text-lg text-sm md:leading leading-6">
           <li
             class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
           >
@@ -132,8 +131,8 @@ import Button from "../components/Button.astro";
       </a>    
   </div>
 
-  <div class="flex items-center justify-center py-4 lg:py-10">
-    <h3 class="lg:text-xl text-lg font-['Lora'] font-bold text-text-primary">
+  <div class="flex items-center justify-center py-4 md:py-10">
+    <h3 class="md:text-xl text-lg font-['Lora'] font-bold text-text-primary">
       Kom med på vores venneliste
     </h3>
   </div>
