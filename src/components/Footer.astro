@@ -33,20 +33,22 @@ import Button from "../components/Button.astro";
             <li><a href="#"></a>Hovedgaden 12 <br /> 2970 Hørsholm</li>
           </a>
         </ul>
-        <div class="flex gap-6 lg:justify-start justify-center py-10">
+        <div class="flex gap-6 lg:justify-start justify-center">
+          
+          <!-- Instagram logo -->
           <a href="https://www.facebook.com/CPHLABDK" target="_blank">
-            <Image
-              src={Instagram}
-              alt="Instagram logo"
-              class="hover:brightness-50"
-            />
+            <div
+            id="Instagram logo"
+            class="w-[20px] h-[20px] bg-[url('/instagram.svg')] hover:bg-[url('/instagram_hover.svg')] bg-cover transition duration-400 ease-in-out my-10">
+          </div>
           </a>
+
+          <!-- Facebook logo -->
           <a href="https://www.instagram.com/cph.lab" target="_blank">
-            <Image
-              src={Facebook}
-              alt="Facebook logo"
-              class="hover:brightness-50"
-            />
+            <div
+            id="Facebook logo"
+            class="w-[10px] h-[20px] bg-[url('/facebook.svg')] hover:bg-[url('/facebook_hover.svg')] bg-cover transition duration-400 ease-in-out my-10">
+          </div>
           </a>
         </div>
       </div>
@@ -123,9 +125,10 @@ import Button from "../components/Button.astro";
     </div>
   </footer>
 
+<!-- Logo footer -->
   <div class="flex p-13 items-center justify-center">
     <a href="#">
-      <a href="#top">
+      <a href="#">
         <div
           id="logo"
           class="h-[60px] w-[166px] bg-[url('/logo.svg')] hover:bg-[url('/logo_hover.svg')] bg-cover transition duration-400 ease-in-out mt-10">
