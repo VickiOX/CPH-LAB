@@ -6,7 +6,7 @@ import Ialt from "../components/Ialt.astro";
 ---
 <MainLayout title="CPH-Lab"> 
 	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
-	<article class="mx-14 lg:mx-2">
+	<article class="mx-14 lg:mx-22">
 
 	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-22 lg:text-5xl lg:pt-12">Levering og betaling</h1>
 
@@ -185,10 +185,10 @@ import Ialt from "../components/Ialt.astro";
 
 <!-- Web -->
 <div class="hidden lg:block pt-0">
-    <div class="grid grid-cols-2 pt-6">
+    <div class="grid grid-cols-2 pt-10">
 
         <!-- Tilbage knap -->
-        <div class="flex justify-start mx-22">
+        <div class="flex justify-start mx-19">
 
             <a href="/kurv">
         <Button variant="secondary" size="medium">Tilbage</Button>
@@ -196,12 +196,12 @@ import Ialt from "../components/Ialt.astro";
         </div>
 
         <!-- Fortsæt knap -->
-        <div class="flex justify-end mx-22">
+        <div class="flex justify-end mx-19">
             <input type="hidden" id="submit-button"/>
 
             <a href="/tak">
 
-        <Button variant="primary" size="medium" type="submit" value="Submit" onclick="submitForm()" form="Kundeoplysninger" >Fortsæt</Button>
+        <Button variant="primary" size="medium" type="submit" value="Submit" onclick="submitForm()" form="Kundeoplysninger" >Fortsæt til betaling</Button>
             </a>
         </input>
         </div>
@@ -210,7 +210,7 @@ import Ialt from "../components/Ialt.astro";
     
     <!-- Mobil -->
     <div class="lg:hidden">
-        <div class="grid grid-cols-2 pt-19 gap-6 mx-0">
+        <div class="grid grid-cols-2 pt-19 gap-0 mx-0">
             
          
                 <!-- Tilbage knap -->
@@ -220,7 +220,7 @@ import Ialt from "../components/Ialt.astro";
       
                 <!-- Fortsæt knap -->
                 <a href="/tak">
-                <Button variant="primary" size="small">Fortsæt</Button>
+                <Button variant="primary" size="small">Fortsæt til betaling</Button>
                 </a>
     
             </div>
