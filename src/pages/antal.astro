@@ -34,12 +34,12 @@ import BestilCard from "../components/BestilCard.astro";
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-12 lg:text-5xl">Kvantitet</h1>
+	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-12 lg:-mt-12 lg:text-5xl">Kvantitet</h1>
 
 
 	<!-- Card af filmruller -->
 	<section class="mx-11">
-        <h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-4xl">Vælg antal filmruller</h2>
+        <h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-3xl lg:pt-8">Vælg antal filmruller</h2>
 
     <div class="flex justify-center">
 		<div class="grid grid-cols-3 gap-9 lg:gap-20 lg:pt-14">
@@ -67,12 +67,16 @@ import BestilCard from "../components/BestilCard.astro";
 <div class="grid grid-cols-2 pt-6">
     <!-- Tilbage knap -->
     <div class="flex justify-start mx-22">
+		<a href="/kvalitet">
     <Button variant="secondary" size="medium">Tilbage</Button>
+		</a>
     </div>
 
     <!-- Fortsæt knap -->
     <div class="flex justify-end mx-22">
+		<a href="/kurv">
     <Button variant="primary" size="medium">Fortsæt</Button>
+		</a>
     </div>
 </div>
 </div>
@@ -83,10 +87,14 @@ import BestilCard from "../components/BestilCard.astro";
         
      
             <!-- Tilbage knap -->
+			<a href="/kvalitet">
             <Button variant="secondary" size="small">Tilbage</Button>
+			</a>
   
             <!-- Fortsæt knap -->
+			<a href="/kurv">
             <Button variant="primary" size="small">Fortsæt</Button>
+			</a>
 
         </div>
     </div>

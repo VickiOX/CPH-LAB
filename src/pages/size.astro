@@ -34,8 +34,8 @@ import BestilCard from '../components/BestilCard.astro'
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-[32px] font-[display] pt-12 lg:text-5xl">Størrelse</h1>
-	<h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-4xl">Vælg din filmrulle</h2>
+	<h1 class="text-text-primary text-center text-[32px] font-[display] pt-12 lg:-mt-10 lg:text-5xl">Størrelse</h1>
+	<h2 class="text-text-secondary text-center font-[display] text-mobilxl lg:text-3xl lg:pt-6">Vælg din filmrulle</h2>
 
 	<h3 class="text-text-primary text-center font-[display] pt-10 lg:text-2xl lg:pt-14 lg:pb-6 ">Standard størrelser</h3>
 	<!-- Card af filmruller -->
@@ -62,12 +62,16 @@ import BestilCard from '../components/BestilCard.astro'
 	<div class="grid grid-cols-2 pt-6">
 		<!-- Tilbage knap -->
 		<div class="flex justify-start mx-22">
-		<Button variant="secondary" size="medium">Fortsæt</Button>
+			<a href="/fremkaldelse">
+		<Button variant="secondary" size="medium">Tilbage</Button>
+			</a>
 		</div>
 	
 		<!-- Fortsæt knap -->
 		<div class="flex justify-end mx-22">
+			<a href="/type">
 		<Button variant="primary" size="medium">Fortsæt</Button>
+			</a>
 		</div>
 	</div>
 	</div>
@@ -78,10 +82,14 @@ import BestilCard from '../components/BestilCard.astro'
 			
 		 
 				<!-- Tilbage knap -->
-				<Button variant="secondary" size="small">Fortsæt</Button>
+				<a href="/fremkaldelse">
+				<Button variant="secondary" size="small">Tilbage</Button>
+				</a>
 	  
 				<!-- Fortsæt knap -->
+				<a href="/type">
 				<Button variant="primary" size="small">Fortsæt</Button>
+				</a>
 	
 			</div>
 		</div>
