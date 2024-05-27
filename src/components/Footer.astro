@@ -1,70 +1,146 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/logo/public/logo.png";
 import Instagram from "../assets/icons/instagram.svg";
 import Facebook from "../assets/icons/facebook.svg";
 import Button from "../components/Button.astro";
 ---
 
 <div>
-    <footer class="border-t font-['Arial'] border-text-primary max-w-full pt-14 flex lg:justify-center">
-    <div class="w-full max-w-screen-lg grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-26">
-
-        <div class="col-span-1 text-center lg:text-left order-3 md:order-1">
-          <h2 class="text-lg lg:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase lg:py-12">Kontakt</h2>
-          <ul class="text-text-primary lg:text-lg text-sm lg:leading leading-6">
-            <li class="hover:text-text-tertiary underline transition duration-400 ease-in-out"><a href="mailto:info@cph-lab.dk">info@cph-lab.dk</a></li>
-            <br>
-            <a href="https://www.google.com/maps/place/CPH-LAB/@56.23008,11.5425,7z/data=!3m1!4b1!4m6!3m5!1s0x46525386f9339beb:0xca438c908c55dd78!8m2!3d56.23008!4d11.5425!16s%2Fg%2F11frflk7k_?hl=da&entry=ttu" target="_blank">
-              <li class="font-bold"><a href="#"></a>CPH-LAB / Hørsholm Foto</li>
-              <li><a href="#"></a>Hovedgaden 12 <br> 2970 Hørsholm</li>
-            </a>
-          </ul>
-          <div class="flex gap-6 lg:justify-start justify-center py-10">
-            <a href="https://www.facebook.com/CPHLABDK" target="_blank">
-              <Image src={Instagram} alt="Instagram logo" class="hover:brightness-50"/>
-            </a>
-            <a href="https://www.instagram.com/cph.lab" target="_blank">
-              <Image src={Facebook} alt="Facebook logo" class="hover:brightness-50"/>    
-            </a>
-          </div>
-        </div>
-  
-        <div class="col-span-1 text-center lg:text-center order-1 md:order-2">
-          <h2 class="text-lg lg:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase lg:py-12">Services</h2>
-          <ul class="text-text-primary lg:text-lg text-sm lg:leading leading-6">
-            <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"><a href="#"></a>Bestil fremkaldelse</li>
-            <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out">Overspilning af videobånd</li>
-            <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out">Scan af lysbilleder</li>
-            <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out">Scan af papirbilleder</li>
-            <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out">Overspilninger af smalfilm</li>
-          </ul>
-        </div>
-  
-        <div class="col-span-1 text-center lg:text-right order-2 md:order-3">
-          <h2 class="text-lg lg:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase lg:py-12">Information</h2>
-          <ul class="text-text-primary lg:text-lg text-sm lg:leading leading-6">
-              <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out">Forsendelse og returnering</li>
-              <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out">Betalingsmetoder</li>
-              <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out">Persondatapolitik</li>
-              <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out">FAQ</li>
-              <li class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out">Handelsbetingelser</li>
-          </ul>
+  <footer
+    class="border-t font-['Arial'] border-text-primary max-w-full pt-14 flex lg:justify-center"
+  >
+    <div
+      class="w-full max-w-screen-lg grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-26"
+    >
+      <div class="col-span-1 text-center lg:text-left order-3 md:order-1">
+        <h2
+          class="text-lg lg:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase lg:py-12"
+        >
+          Kontakt
+        </h2>
+        <ul class="text-text-primary lg:text-lg text-sm lg:leading leading-6">
+          <li
+            class="hover:text-text-tertiary underline transition duration-400 ease-in-out"
+          >
+            <a href="mailto:info@cph-lab.dk">info@cph-lab.dk</a>
+          </li>
+          <br />
+          <a
+            href="https://www.google.com/maps/place/CPH-LAB/@56.23008,11.5425,7z/data=!3m1!4b1!4m6!3m5!1s0x46525386f9339beb:0xca438c908c55dd78!8m2!3d56.23008!4d11.5425!16s%2Fg%2F11frflk7k_?hl=da&entry=ttu"
+            target="_blank"
+          >
+            <li class="font-bold"><a href="#"></a>CPH-LAB / Hørsholm Foto</li>
+            <li><a href="#"></a>Hovedgaden 12 <br /> 2970 Hørsholm</li>
+          </a>
+        </ul>
+        <div class="flex gap-6 lg:justify-start justify-center py-10">
+          <a href="https://www.facebook.com/CPHLABDK" target="_blank">
+            <Image
+              src={Instagram}
+              alt="Instagram logo"
+              class="hover:brightness-50"
+            />
+          </a>
+          <a href="https://www.instagram.com/cph.lab" target="_blank">
+            <Image
+              src={Facebook}
+              alt="Facebook logo"
+              class="hover:brightness-50"
+            />
+          </a>
         </div>
       </div>
-</div>
 
-<div class="flex p-13 items-center justify-center">    
+      <div class="col-span-1 text-center lg:text-center order-1 md:order-2">
+        <h2
+          class="text-lg lg:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase lg:py-12"
+        >
+          Services
+        </h2>
+        <ul class="text-text-primary lg:text-lg text-sm lg:leading leading-6">
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            <a href="#"></a>Bestil fremkaldelse
+          </li>
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            Overspilning af videobånd
+          </li>
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            Scan af lysbilleder
+          </li>
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            Scan af papirbilleder
+          </li>
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            Overspilninger af smalfilm
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-span-1 text-center lg:text-right order-2 md:order-3">
+        <h2
+          class="text-lg lg:text-xl font-['Lora'] font-bold py-6 text-text-primary uppercase lg:py-12"
+        >
+          Information
+        </h2>
+        <ul class="text-text-primary lg:text-lg text-sm lg:leading leading-6">
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            Forsendelse og returnering
+          </li>
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            Betalingsmetoder
+          </li>
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            Persondatapolitik
+          </li>
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            FAQ
+          </li>
+          <li
+            class="hover:text-text-tertiary cursor-pointer transition duration-400 ease-in-out"
+          >
+            Handelsbetingelser
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="flex p-13 items-center justify-center">
     <a href="#">
-        <Image src={logo} alt="logo" class="p-10 w-26" />
+      <a href="#top">
+        <div
+          id="logo"
+          class="h-[60px] w-[166px] bg-[url('/logo.svg')] hover:bg-[url('/logo_hover.svg')] bg-cover transition duration-400 ease-in-out mt-10">
+        </div>
+      </a>    
     </a>
-</div>
+  </div>
 
-<div class="flex items-center justify-center py-4 lg:py-10">
-    <h3 class="lg:text-xl text-lg font-['Lora'] font-bold text-text-primary">Kom med på vores venneliste</h3>
-</div>
+  <div class="flex items-center justify-center py-4 lg:py-10">
+    <h3 class="lg:text-xl text-lg font-['Lora'] font-bold text-text-primary">
+      Kom med på vores venneliste
+    </h3>
+  </div>
 
-<div class="w-[380px] mx-auto flex">    
+  <div class="w-[380px] mx-auto flex">
     <label for="email" class="block"></label>
     <input
       type="text"
@@ -72,17 +148,17 @@ import Button from "../components/Button.astro";
       name="email"
       placeholder="placeholder@myemail.com"
       class="placeholder-grey-50 w-full text-md focus:ring-0 px-7 border-2 border-btn-primary focus:outline-none focus:border-2 focus:border-text-tertiary"
-      />
-      <button>
-        <Button variant="primary" size="small">Tilmeld</Button>
-      </button>
+    />
+    <button>
+      <Button variant="primary" size="small">Tilmeld</Button>
+    </button>
   </div>
 
-  
-  <div class="flex uppercase py-10 text-text-primary" style="justify-content: space-between;">
+  <div
+    class="flex uppercase py-10 text-text-primary"
+    style="justify-content: space-between;"
+  >
     <div class="text-xs ml-12">CVR: 40 80 91 20</div>
     <div class="text-xs mr-12">Copyright 2024 © CPH-LAB</div>
+  </div>
 </div>
-</footer>
-  
-  
