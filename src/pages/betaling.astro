@@ -8,13 +8,13 @@ import Ialt from "../components/Ialt.astro";
 	<!-- for hver spacing mellem sektionerne skal der være 112px som kan skrives som py-22, pt-22 eller pb-22 -->
 	<article class="mx-14 lg:mx-22">
 
-	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] font-bold pt-22 lg:text-5xl lg:pt-12">Levering og betaling</h1>
+	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] italic font-bold pt-22 lg:text-5xl lg:pt-12">Levering og betaling</h1>
 
     <section class="lg:grid lg:grid-cols-3 pt-10">
 
         
 	<section class="mx-0 hidden lg:block">
-        <h2 class="text-text-secondary text-center font-[display] text-xl lg:text-3xl">Kurv</h2>
+        <h2 class="text-text-secondary text-center font-['Lora'] italic font-bold text-xl lg:text-3xl">Kurv</h2>
 
         <div class="flex justify-center">
          <div class="mx-0 lg:mx-19 lg:pt-10">
@@ -28,7 +28,7 @@ import Ialt from "../components/Ialt.astro";
 </section>
 
 <section>
-    <h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-3xl">Kundeoplysninger</h2>
+    <h2 class="text-text-secondary text-center font-['Lora'] italic font-bold text-xl lg:text-3xl">Kundeoplysninger</h2>
     <!-- Form -->
     <div class="mx-12 lg:mx-19 bg-card-primary border border-card-stroke p-8 mt-6 flex justify-center lg:mt-10">
         
@@ -92,7 +92,7 @@ import Ialt from "../components/Ialt.astro";
 
 
 <section class="lg:pt-0 mt-6">
-    <h2 class="text-text-secondary text-center font-['Lora'] text-xl lg:text-3xl">Levering og betaling</h2>
+    <h2 class="text-text-secondary text-center font-['Lora'] italic font-bold text-xl lg:text-3xl">Levering og betaling</h2>
    
     <div class="mx-12 mt-6 lg:mx-19 lg:mt-10 bg-card-primary border border-card-stroke px-8 pt-8 flex justify-center border-b-0">
         <div class="bg-card-stroke p-4 border border-card-secondary w-full">
@@ -214,14 +214,18 @@ import Ialt from "../components/Ialt.astro";
             
          
                 <!-- Tilbage knap -->
-                <a href="/kurv">
-                <Button variant="secondary" size="small">Tilbage</Button>
-                </a>
-      
-                <!-- Fortsæt knap -->
-                <a href="/tak">
-                <Button variant="primary" size="small">Fortsæt til betaling</Button>
-                </a>
+				<div class="flex justify-center mx-0">
+                    <a href="/kurv">
+                    <Button variant="secondary" size="small">Tilbage</Button>
+                    </a>
+                </div>
+          
+                    <!-- Fortsæt knap -->
+                    <div class="flex justify-center mx-0">
+                    <a href="/tak">
+                    <Button variant="primary" size="small">Fortsæt</Button>
+                    </a>
+                </div>
     
             </div>
         </div>
