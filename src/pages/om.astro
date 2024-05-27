@@ -1,154 +1,394 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
+import filmruller from "../assets/images/filmruller.webp";
 import filmrulle1 from "../assets/images/filmrulle-1.webp";
 import filmrulle2 from "../assets/images/filmrulle-2.webp";
+import filmrulleom from "../assets/images/filmrulle-om.webp";
 import Nicephore from "../assets/images/Nicephore.webp";
 import Eastman from "../assets/images/Eastman.webp";
 import ensomComputer from "../assets/images/ensom-computer.webp";
+import Benny from "../assets/images/Benny-Thelin.webp";
+import Emil from "../assets/images/Emil-Basse.webp";
+import William from "../assets/images/William-Green.webp";
 ---
+<MainLayout title="CPH-Lab">
 
-
-<section class="sektion1 analogErIkkeDødt">
-     <!-- eksemple indsæt den rigtige -->
-    <!-- <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>-->
-    <h1 class="font-Lora text-6xl text-text-tertiary "></h1>
-</section>
-
-<section class="sektion2 analogErIkkeDødtText font-Arial text-md text-text-primary">
-    <p class="">Analog fotografi, også kendt som filmfotografi, har en unik æstetik og autentisk charme. Det er en praksis, der kræver omhu og opmærksomhed, men til gengæld belønner med en unik kvalitet, autencitet og en håndværksmæssig proces.</p>
-
-    <p class="">Dets fascinerende historie strækker sig tilbage før det digitale kameras opfindelse. Fra 1800-tallet til i dag ser vi stadig en værdsættelse af det langsomme, charmerende og omhyggelige håndværk.</p>
-</section>
-
-<section class="sektion3 hvorDetHeleStartede">
+  <section class="sektion1 analogErIkkeDødt pt-22 md:-mt-22 ">
     
-    <div>
-        <h2>Hvor det hele startede...</h2>
-        <div class="gulOverskrift">
-            <h3>1828</h3>
+    <div class="video-container relative ">
+
+      <div class="block md:hidden"> 
+        <video width="100%" height="413" autoplay muted loop>
+          <source src="https://video.wixstatic.com/video/392078_3023cbdc223541459d96c48212615446/480p/mp4/file.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="md:block hidden">
+        <video width="100%" height="550" autoplay muted loop>
+          <source src="https://video.wixstatic.com/video/392078_3023cbdc223541459d96c48212615446/480p/mp4/file.mp4" type="video/mp4">
+        </video>
+      </div>
+     
+      <div class="text-overlay absolute left-1 right-1 top-24 md:top-34 mt-16   ">
+        <h1 class="font-serif   text-[32px] md:text-6xl text-text-secondary text-center ">
+          ANALOG ER IKKE DØDT
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="sektion2 analogErIkkeDødtText font-body  mobil_md md:text-2xl text-text-primary pt-16 md:pt-22 px-20 md:w-[500px] text-center mx-auto sticky">
+    <div class="sticky items-center top-40">
+        <p class="pt-10">Analog fotografi, også kendt som filmfotografi, har en unik æstetik og autentisk charme. Det er en praksis, der kræver omhu og opmærksomhed, men til gengæld belønner med en unik kvalitet, autencitet og en håndværksmæssig proces.</p>
+    </div>
+    <div class="items-center sticky top-52  ">
+        <p class="pt-10">Dets fascinerende historie strækker sig tilbage før det digitale kameras opfindelse. Fra 1800-tallet til i dag ser vi stadig en værdsættelse af det langsomme, charmerende og omhyggelige håndværk.</p>
+    </div>
+    
+  </section>
+
+
+<!-- fadein animaiton på h3 på section 3-5 -->
+
+  <section class="sektion3 hvorDetHeleStartede pt-22 relative ">
+    <div class="grid grid-cols-2 pb-[200px] md:pb-[480px] overflow-hidden">
+      <div class="md:px-24 md:w-[800px] ">
+        <h2 class="font-serif text-text-primary font-bold italic md:text-4xl text-[20px] pl-8 w-[300px]">
+          Hvor det hele startede...
+        </h2>
+        <div class="gulOverskrift border border-card-stroke w-[100px]  md:w-[400px] ml-[-21px]  md:ml-[-200px] ">
+          <h3 class="font-serif text-text-secondary font-bold md:text-4xl text-[24px] ">
+            1828
+          </h3>
         </div>
-        <p>Analog fotografi opstod i midten af 1800-tallet med opdagelsen af fotokemiske processer, der tillod lys at interagere med kemikalier på filmoverfladen for at skabe et billede. </p>
-        <p>Det første fotografi, kaldet La Cour Du Domaine Du Gras, blev skabt af Nicéphore Niépce i 1826 og viser en udsigt fra et vindue i hans hus i Frankrig.</p>
+        <div
+          class="font-Arial text-mobilxxs md:text-xl text-text-primary w-[250px] md:w-[400px] mobil_sm pl-8">
+          <p>
+            Analog fotografi opstod i midten af 1800-tallet med opdagelsen af
+            fotokemiske processer, der tillod lys at interagere med kemikalier
+            på filmoverfladen for at skabe et billede.
+          </p>
+          <p>
+            Det første fotografi, kaldet La Cour Du Domaine Du Gras, blev skabt
+            af Nicéphore Niépce i 1826 og viser en udsigt fra et vindue i hans
+            hus i Frankrig.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="">
+        <Image src={Nicephore} alt="" class="w-[100px] md:w-34 md:ml-20 ml-[90px]" />
+      </div>
+    </div>
+    
+   <div class="overflow-hidden ">
+        <Image src={filmrulle1} alt="" class=" w-screen md:w-screen absolute  top-[280px] md:top-1"/>
+    </div>
+    
+
+    <div class="grid grid-cols-2 z-0 overflow-hidden ">
+      <div class="">
+        <Image src={Eastman} alt="" class=" w-[100px] md:w-34 md:ml-24  ml-[60px]" />
+      </div>
+
+      <div class=" md:w-[625px] md:ml-60 md:pl-10 ">
+        <div class="gulOverskrift border border-card-stroke  md:w-screen -mr-[21px] z-10">
+          <h3 class="font-serif text-text-secondary font-bold md:text-4xl text-[24px]">
+            1888
+          </h3>
+        </div>
+        <div class="font-Arial md:text-xl text-text-primary pr-4 md:w-[400px] mobil_sm">
+            <p >
+                George Eastmans opfindelse af filmrullen i 1888 revolutionerede
+                fotografiets verden ved at gøre det lettere at tage flere billeder
+                uden at skifte plader. Mørkekammerprocessen var den primære metode til
+                at udvikle film, som krævende omhyggelighed og ekspertise.
+              </p>
+              <p >
+                I det 20. århundrede blev adgangen til analog fotografi gradvist mere
+                almindelig og tilgængelig for almindelige mennesker, da kameraer blev
+                mindre og mere overkommelige.
+              </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  <section class="sektion4 digitalRevolution pt-22 overflow-hidden">
+    <div class="gulOverskrift border border-card-stroke w-[350px] md:w-[800px] md:ml-[-200px] ml-[-21px] z-10 ">
+      <h3 class="font-serif text-text-secondary font-bold md:text-4xl text-[24px]">
+        Den Digitale Revolution
+      </h3>
+    </div>
+
+
+    <div class="relative w-screen flex ">
+        <Image class="h-64 w-screen object-cover md:w-screen" src={ensomComputer}  alt="Random image"/>
+        <div class="absolute inset-0 w-[300px] md:w-[600px] md:justify-center text-center top-6 md:top-1/3 left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:text-xl mobil_sm">
+            <p class="">Fra slutningen af 1980'erne ændrede fotografering radikalt.
+                Digitalkameraets fremkomst gjorde det hurtigere, billigere og mere
+                tilgængeligt at tage billeder. Fotografer kunne tage ubegrænsede billeder
+                uden filmruller og se resultaterne øjeblikkeligt på en skærm.</p>
+                <p class="">
+                  Denne teknologiske forandring gjorde fotografering mere tilgængelig og
+                  ændrede måden, vi oplever fotografier på. Alt i alt førte indførelsen af
+                  digitalkameraet til en ny æra af praksis, kvalitet og billedkommunikation.
+                </p>
+        </div>
     </div>
    
-    <div>
-        <Image src={Nicephore} alt="" class="" ></Image>
-    </div>
+  
+    
+  </section>
 
-    <Image src={filmrulle1} alt="" class="" ></Image>
-
-    <div>
-        <Image src={Eastman} alt="" class="" ></Image>
-    </div>
-
-    <div>
-        <div class="gulOverskrift">
-            <h3>1888</h3>
+  <section class="sektion5 py-22 relative  ">
+    <div class="md:grid md:grid-cols-2 md:pb-[480px] overflow-hidden">
+      <div></div>
+      <div>
+        <h2 class="font-serif text-text-primary font-bold italic md:text-4xl text-[20px] pl-8">Hvor det blev retro...</h2>
+        <div class="gulOverskrift border border-card-stroke w-[330px] md:w-screen -ml-[10px] z-10 ">
+          <h3 class="font-serif text-text-secondary font-bold md:text-4xl text-[24px]" >Den digitale tidsalder</h3>
         </div>
-        <p>George Eastmans opfindelse af filmrullen i 1888 revolutionerede fotografiets verden ved at gøre det lettere at tage flere billeder uden at skifte plader. Mørkekammerprocessen var den primære metode til at udvikle film, som krævende omhyggelighed og ekspertise.</p>
-        <p>I det 20. århundrede blev adgangen til analog fotografi gradvist mere almindelig og tilgængelig for almindelige mennesker, da kameraer blev mindre og mere overkommelige. </p>
+        <p class="text-text-primary mobil_sm md:text-xl pl-8">Selvom digital fotografi har domineret markedet siden 1990'erne på grund af dets bekvemmelighed og hurtige resultater, forbliver analog fotografi populært blandt dem der værdsætter det unikke udtryk og den håndværksmæssige proces.</p>
+        <p class="text-text-primary mobil_sm md:text-xl pb-32 pl-8">Både erfarne fotografer og unge entusiaster ser det som en modreaktion mod den manipulerede virkelighed, som digitale medier har skabt, og ser stor værdi i det retro udtryk og den omhu som er forbunden med den analoge praksis. </p>
+      </div>
     </div>
-   
+    
+    <div class="overflow-hidden "> 
+    <Image src={filmrulle2} alt="" class="w-screen md:w-screen absolute top-[500px]"/>
+    </div>
+    
+    <div>
+      <h2 class="font-serif text-text-primary font-bold italic md:text-4xl text-[20px] pl-8">Hvor er vi nu...</h2>
+      <div class=" gulOverskrift border border-card-stroke md:w-[330px]  ml-[-40px] ">
+        <h3 class="font-serif text-text-secondary font-bold  md:text-4xl text-[24px]">2024</h3>
+      </div>
+      <div class="paragraf sektion md:grid md:grid-cols-2 text-text-primary mobil_sm md:text-xl pl-8">
+        <div class="">
+          <p>Vi tror på, at analogbilleder stadig har en unik charme, der imponerer. Vi elsker det æstetiske udtryk, farverne og den organiske følelse, som film formidler, og vi ønsker at dette medium forbliver i vores måde at fotografere på.</p>
+          <p>Hos CPH-LAB står vi klar til at hjælpe dig med at få det bedste ud af dine analoge billeder. Vi tilbyder fremkaldelse af dine filmruller, scanning af dine negativer, printning af dine mesterværker og levering af nye filmruller, når du har brug for dem.</p>
+        </div>
+        <div>
+          <p>Vores mission er at gøre det enkelt for alle at skyde analogt og at sikre en pålidelig fremkaldelsesproces. CPH-LAB ønsker at give folk mulighed for at opleve dette særlige udtryk ved at tilbyde en tilgængelig platform.</p>
+          <p>Vi har til hensigt at forene det analoge medium med dets tidløse charme og samtidig tilbyde en let og tilgængelig service, der leveres på et digitalt sølvfad..</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stagger animaiton -->
+  
+  <section class="sektion6 relative">
+    <Image src={filmrulleom} alt="" class="w-screen h-[204px] md:h-[380px]"/>
+    <p class=" absolute text-text-primary justify-center text-center mobil_md  md:text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[240px] fadeIn">Vi er et dedikeret hold af filmnørder, der brænder for at levere en service, der gør det nemt for alle at få det bedste ud af deres analoge filmoplevelser.</p>
+  </section>
+  
+
+  <!-- section 7 text sticky med fadein, billederne scroll animation.... -->
+  <!-- Den skal ikke rettes endnu -->
+  <!-- 
+  <div>
+  <section class="sektion7 pt-22 sticky">
+    <h2 class="font-serif text-text-primary font-bold italic md:text-4xl md:pl-24 pl-16  text-[20px]">Mød menneskerne bag</h2>
+
+    <div class=" md:grid md:grid-cols-2 sticky top-0 h-screen" id=""> 
+      <div class="Benny   crossfadeimages">
+        <Image src={Benny} alt="" class=" crossfadetopimg   "/>
+        <Image src={Emil} alt="" class=" crossfadebottomimg  "/>
+        <Image src={William} alt="" class="hidden top-[160px] "/>
+      </div>
+      <div class=" mt-6 md:mt-[360px]">
+        <div class="gulOverskrift border border-card-stroke w-[100px]  md:w-screen -ml-[21px] z-10">
+          <h3 class="font-serif text-text-secondary font-bold text-[20px] md:text-4xl fadeInRight3">Benny Thelin</h3>
+        </div>
+        <div class="text-text-primary md:text-xl mobil_md pl-16 w-[320px] fadeIn1 ">
+        <p class="pb-12">Benny Thelin er ejer af film-labbet, lab-ansvarlig og indehaver af Hørsholm Foto.</p>
+        <p>Yndlingsfilm: <br>Kodak Tri-X 400</p>
+      </div>
+      </div>
+    </div>
+
+    <div class=" md:grid md:grid-cols-2 sticky top-0 h-screen"> 
+    <div class="Emil  ">
+      <Image src={Emil} alt="" class="z-50  "/>
+      <Image src={William} alt="" class="z-40 "/>
+      <Image src={Benny} alt="" class="z-30  "/>
+      
+    </div>
+    <div class="mt-[360px]">
+      <div class="gulOverskrift border border-card-stroke w-[100px] md:w-screen -mr-10px z-10">
+        <h3 class="font-serif text-text-secondary font-bold  md:text-4xl">Emil Basse</h3>
+      </div>
+      <div class="text-text-primary text-xl">
+        <p>Emil Basse er stifter af CPH-LAB. <br> Markedsføring og kommunikation.</p>
+        <p>Yndlingsfilm: <br>indtast det her</p>
+      </div>
+    </div>
+    </div>
+
+    <div class=" md:grid md:grid-cols-2 sticky top-0 h-screen">
+    <div class="William  ">
+      <Image src={William} alt="" class="z-50  "/>
+      <Image src={Benny} alt="" class="z-40 "/>
+      <Image src={Emil} alt="" class="z-30 "/>
+    </div>
+    <div class="mt-[360px]">
+      <div class="gulOverskrift border border-card-stroke w-[100px] md:w-screen -mr-10px  z-10">
+        <h3 class="font-serif text-text-secondary font-bold  md:text-4xl">William Green</h3>
+      </div>
+      <div class="text-text-primary text-xl"> 
+        <p class="">William Green lab-medhjælper og professionel fotograf. <a href="https://www.instagram.com/williamgreenphotos/">@williamgreenphotos</a></p>
+        <p>Yndlingsfilm: <br> Ilford XP2</p>
+      </div>
+    </div>
+  </div>
+  </section>
+</div>
+-->
+
+  <section class="sektion8 pt-22 font-[display] text-text-primary">
+
+    <div class="relative w-screen flex ">
+      <Image class="h-64 w-screen object-cover " src={filmruller}  alt="Random image"/>
+      <div class="absolute inset-0 w-[400px] justify-center text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <h1 class="md:text-6xl text-2xl font-bold pb-17">Hvorfor CPH-LAB?</h1>
+              <p class="mobil_md md:text-2xl pb-14">
+                Hos CPH-LAB elsker vi fotografi og vil hjælpe med at bevare dine minder. Analoge medier falmer desværre med tiden - få dem digitaliseret og sikret til fremtiden.
+              </p>
+              <p class="mobil_md md:text-2xl  ">
+                Med 25 års erfaring tilbyder vi altid professionel service og håndtering samt sikker forsendelse, hurtig levering og personlig rådgivning.
+              </p>
+      </div>
+  </div>
+  </section>
+
+</MainLayout>
+
+
+
+
+<script>
+    import { animate, stagger, inView, scroll, timeline } from "motion";
     
 
-</section>
-
-
-<section class="sektion4 digitalRevolution">
-    <div class="gulOverskrift">
-        <h3></h3>
-    </div>
-    <Image src={ensomComputer} alt="" class="" ></Image>
-    <p></p>
-
-</section>
-
-
-<section class="sektion5">
-    <div> 
-        <div></div>
-        <h2></h2>
-        <div class="gulOverskrift">
-            <h3></h3>
-        </div>
-        <p></p>
-        <p></p>
-    </div>
-    <Image src={filmrulle2} alt="" class="" ></Image>
-    <div> 
-        <h2></h2>
-        <div class="gulOverskrift">
-            <h3></h3>
-        </div>
-        <div class="paragraf sektion"> 
-            <div> 
-                <p></p>
-                <p></p>
-            </div>
-            <div> 
-                <p></p>
-                <p></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="sektion6">
-<img> <!-- indsæt billede -->
-<p></p>
-</section>
-
-
-<section class="sektion7">
-    <h2></h2>
+      //fadeInLeft
+      //________________________
+      //section 3
+      const fadeInLeft1 = document.querySelector(".fadeInLeft1");
     
-    <div class="Benny">
-        <img>
-        <img>
-        <img>
-    </div>
-    <div>
-        <div class="gulOverskrift">
-            <h3></h3>
-        </div>
-        <p></p>
-        <p></p>
-    </div>
-
-    <div class="Emil">
-        <img>
-        <img>
-        <img>
-    </div>
-    <div>
-        <div class="gulOverskrift">
-            <h3></h3>
-        </div>
-        <p></p>
-        <p></p>
-    </div>
-
-    <div class="William">
-        <img>
-        <img>
-        <img>
-    </div>
-    <div>
-        <div class="gulOverskrift">
-            <h3></h3>
-        </div>
-        <p></p>
-        <p></p>
-    </div>
-   
-</section>
+      inView(fadeInLeft1, () => {
+    
+      fadeInLeft1.classList.add("animate__animated", "animate__fadeInLeft", "animate__delay-1s");
+    
+    }); 
+    //___________________________
 
 
-<section class="sektion8">
-<img>
-<h1></h1>
-<p></p>
-<p></p>
-</section>
+     //________________________
+      //section 4
+    const fadeInLeft2 = document.querySelector(".fadeInLeft2");
+    
+      inView(fadeInLeft2, () => {
+    
+      fadeInLeft2.classList.add("animate__animated", "animate__fadeInLeft", "animate__delay-1s");
+    
+    }); 
+    //________________________
 
+
+    //________________________
+      //section 5
+    const fadeInLeft3 = document.querySelector(".fadeInLeft3");
+    
+      inView(fadeInLeft3, () => {
+    
+      fadeInLeft3.classList.add("animate__animated", "animate__fadeInLeft", "animate__delay-1s");
+    
+    }); 
+    //________________________
+
+      //fadeInRight
+      //________________________
+      //section 3
+      const fadeInRight1 = document.querySelector(".fadeInRight1");
+    
+      inView(fadeInRight1, () => {
+    
+        fadeInRight1.classList.add("animate__animated", "animate__fadeInRight", "animate__delay-1s");
+    
+    }); 
+      //________________________
+
+       //________________________
+      //section 5
+    const fadeInRight2 = document.querySelector(".fadeInRight2");
+    
+      inView(fadeInRight2, () => {
+    
+        fadeInRight2.classList.add("animate__animated", "animate__fadeInRight", "animate__delay-1s");
+    
+    }); 
+    //________________________
+
+    
+     //________________________
+      //section 7
+    const fadeInRight3 = document.querySelector(".fadeInRight3");
+    
+      inView(fadeInRight3, () => {
+    
+        fadeInRight3.classList.add("animate__animated", "animate__fadeInRight", "animate__delay-1s");
+    
+    });
+
+    const fadeInRight4 = document.querySelector(".fadeInRight4");
+    
+      inView(fadeInRight4, () => {
+    
+        fadeInRight4.classList.add("animate__animated", "animate__fadeInRight", "animate__delay-1s");
+    
+    });
+
+    const fadeInRight5 = document.querySelector(".fadeInRight5");
+    
+      inView(fadeInRight5, () => {
+    
+        fadeInRight5.classList.add("animate__animated", "animate__fadeInRight", "animate__delay-1s");
+    
+    });
+    //________________________
+
+    //________________________
+    // section 6
+    const fadeIn = document.querySelector(".fadeIn");
+    
+      inView(fadeIn, () => {
+    
+        fadeIn.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+    
+    });
+      //________________________
+    // section 7
+      const fadeIn1 = document.querySelector(".fadeIn1");
+    
+      inView(fadeIn1, () => {
+    
+        fadeIn1.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+    
+    });
+    //___________
+    //section 7
+    // crossfade animation
+scroll(
+animate(".crossfadebottomimg", {opacity: [0,1]},), 
+{target: document.querySelector(".crossfadeimages"), offset: ["-25vh", "25vh"]}
+)
+
+</script>

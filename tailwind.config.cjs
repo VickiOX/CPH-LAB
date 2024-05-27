@@ -6,9 +6,9 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/container-queries"),
-  ],
+  ]
   
-  fontSize: {
+    ,fontSize: {
     mobil_xxs: "10px",
     mobil_xs: "12px",
     mobil_sm: "14px",
