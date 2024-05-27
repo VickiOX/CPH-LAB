@@ -23,8 +23,9 @@ import instagram7 from "../assets/images/insta-7.webp"
 import instagram8 from "../assets/images/insta-8.webp"
 ---
 
-<!-- Hero unit -->
-<div class="w-full relative">
+<!-- Hero units -->
+<!-- Hero unit desktop-->
+<div class="w-full relative hidden lg:block">
     <div class="w-full lg:h-[500px] flex items-center justify-center overflow-hidden relative">
       <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted>
         <source src="src/assets/video/hero.mp4" type="video/mp4"/>
@@ -35,6 +36,21 @@ import instagram8 from "../assets/images/insta-8.webp"
       <span class="text-grey-500 font-[Lora] font-bold text-3xl">a c41-studio</span>
       <h1 class="drop-shadow-2xl uppercase pt-10 font-[Lora] font-bold text-text-secondary text-4xl lg:text-6xl pb-12 relative z-20">Professionel <br /> film fremkaldelse</h1>
       <Button variant="primary" size="large" class="">Bestil fremkaldelse</Button>
+    </div>
+  </div>
+
+  <!-- Hero unit mobil-->
+  <div class="py-34 w-full relative lg:hidden">
+    <div class="w-full lg:h-[500px] flex items-center justify-center overflow-hidden">
+      <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted>
+        <source src="src/assets/video/hero.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+      <span class="text-grey-500 font-[Lora] font-bold text-3xl">a c41-studio</span>
+      <h1 class="drop-shadow-2xl uppercase pt-10 font-[Lora] font-bold text-text-secondary text-4xl lg:text-6xl pb-12 relative z-20">Professionel <br /> film fremkaldelse</h1>
+      <Button variant="primary" size="medium" class="">Bestil fremkaldelse</Button>
     </div>
   </div>
   
