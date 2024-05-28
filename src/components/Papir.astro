@@ -1,10 +1,30 @@
 ---
 const {title, price} = Astro.props;
 ---
-<div class="bg-card-primary border border-x-card-stroke px-10 py-6 mt-10 lg:mt-12 hover:bg-card-secondary hover:text-text-special ">
-    <p class="text-text-primary text-sm font-['Arial'] lg:text-md ">{title}</p>
-    <p class="text-text_card-price text-sm font-['Arial']">{price}</p>
+<div class="bg-card-primary border border-x-card-stroke px-10 py-6 mt-10 lg:mt-12 hover:bg-card-secondary hover:text-text-special btn">
+    <p class="text-text-primary text-sm font-['Arial'] lg:text-md text">{title}</p>
+    <p class="text-text_card-price text-sm font-['Arial'] price">{price}</p>
 </div>
 
 
+<script>
+    const btn = document.querySelector('.btn');
+    btn.addEventListener('click', () => {
+        btn.style.backgroundColor = '#E0C56A';
+        btn.style.transition = '.5s ease';
 
+        const priceElement = btn.querySelector('.price');
+    if (priceElement) {
+        priceElement.style.color = '#010101'; // Change this color to your desired color
+        priceElement.style.transition = '.5s ease';
+    }
+
+    const textElement = btn.querySelector('.text');
+    if (textElement) {
+        textElement.style.color = '#010101'; // Change this color to your desired color
+        textElement.style.transition = '.5s ease';
+    }
+        return false
+    });
+    
+        </script>

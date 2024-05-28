@@ -4,10 +4,10 @@ const {img, title, text, textto, price} = Astro.props;
 
 <div class="btn bg-card-primary hover:bg-card-secondary border border-card-stroke lg:px-10 lg:py-11  hover:text-text-special">
 <img class="w-auto h-auto lg:w-[210px] lg:h-[200px]" src={img}>
-<p class="text-center text-text-primary text-sm font-['Arial'] lg:text-md font-bold pb-5 pt-5 lg:text-md">{title}</p>
-<p class="text-center text-text-primary text-xs font-['Arial'] lg:text-md px-10 lg:text-sm">{text}</p>
-<p class="text-center text-text-primary text-xs font-['Arial'] lg:text-md px-10 py-2 lg:text-sm">{textto}</p>
-<p class="text-center text-text_card-price text-sm font-['Arial'] lg:text-md pt-5 pb-6 lg:text-md lg:pb-1">{price}</p>
+<p class="text-center text-text-primary text-sm font-['Arial'] lg:text-md font-bold pb-5 pt-5 lg:text-md text">{title}</p>
+<p class="text-center text-text-primary text-xs font-['Arial'] lg:text-md px-10 lg:text-sm info">{text}</p>
+<p class="text-center text-text-primary text-xs font-['Arial'] lg:text-md px-10 py-2 lg:text-sm pixel">{textto}</p>
+<p class="text-center text-text_card-price text-sm font-['Arial'] lg:text-md pt-5 pb-6 lg:text-md lg:pb-1 price">{price}</p>
 </div>
 
 <script>
@@ -15,6 +15,31 @@ const {img, title, text, textto, price} = Astro.props;
     btn.addEventListener('click', () => {
         btn.style.backgroundColor = '#E0C56A';
         btn.style.transition = '.5s ease';
+
+        const priceElement = btn.querySelector('.price');
+    if (priceElement) {
+        priceElement.style.color = '#010101'; // Change this color to your desired color
+        priceElement.style.transition = '.5s ease';
+    }
+
+    const textElement = btn.querySelector('.text');
+    if (textElement) {
+        textElement.style.color = '#010101'; // Change this color to your desired color
+        textElement.style.transition = '.5s ease';
+    }
+
+    const infoElement = btn.querySelector('.info');
+    if (infoElement) {
+        infoElement.style.color = '#010101'; // Change this color to your desired color
+        infoElement.style.transition = '.5s ease';
+    }
+
+    const pixelElement = btn.querySelector('.pixel');
+    if (pixelElement) {
+        pixelElement.style.color = '#010101'; // Change this color to your desired color
+        pixelElement.style.transition = '.5s ease';
+    }
+
         return false
     });
     
