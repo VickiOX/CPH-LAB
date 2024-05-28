@@ -34,38 +34,38 @@ import Ialt from "../components/Ialt.astro";
         
         <form class="text-text-primary" id="Kundeoplysninger">
             <div class="-mt-5">
-            <label for="email">Email</label>
+            <label for="email" class="text-[12px]">E-mail</label>
             <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary peer" type="email" id="email" name="email"/>
             <p class="mt-2 hidden peer-invalid:block text-text-secondary text-[10px] lg:text-xs">
-      Udfyld korrekt email tak.
+      Udfyld korrekt e-mail tak.
     </p>
         </div>
 
             <div class="pt-4">
-            <label for="fname">Fornavn</label>
+            <label for="fname" class="text-[12px]">Fornavn</label>
             <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="fname" name="fname" required />
          
         </div>
 
             <div class="pt-4">
-            <label for="lname">Efternavn</label>
+            <label for="lname" class="text-[12px]">Efternavn</label>
             <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="lname" name="lname" required/>
         </div>
 
             <div class="pt-4">
-            <label for="tel">Telefonnummer</label>
+            <label for="tel" class="text-[12px]">Telefonnummer</label>
             <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="tel" id="tel" name="tel" required/>
         </div>
 
           
         <div class="grid grid-cols-2 gap-6">
             <div class="pt-4">
-                <label for="post">Post nr.</label>
+                <label for="post" class="text-[12px]">Post nr.</label>
                 <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="post" name="post" pattern="[0-4]*" required/>
             </div>
 
             <div class="pt-4"> 
-                <label for="by">By</label>
+                <label for="by" class="text-[12px]">By</label>
                 <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="by" name="by" required/>
             </div>
         </div>
@@ -73,12 +73,12 @@ import Ialt from "../components/Ialt.astro";
 
             <div class="grid grid-cols-2 gap-6">
                 <div class="pt-4">
-                    <label for="land">Land</label>
+                    <label for="land" class="text-[12px]">Land</label>
                     <input class="flex w-full items-center text-text-special border border-card-secondary  focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="by" name="by" required/>
                 </div>
 
                 <div class="pt-4">
-                    <label for="Region">Region</label>
+                    <label for="Region" class="text-[12px]">Region</label>
                     <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="region" name="region" required/>
                 </div>
         </div>
@@ -110,8 +110,8 @@ import Ialt from "../components/Ialt.astro";
                 </div>
             </div>
 
-                <p class="px-14 text-sm text-text_card-price">1-4 hverdage </p>
-                <p class="px-0 pt-6 text-xs text-center pb-6 lg:pt-4 text-processbar-primary">* Kun ved ønske om negativer retur</p>
+                <p class="px-[32px] text-sm text-text_card-price">1-4 hverdage </p>
+                <p class="px-0 pt-3 text-xs text-center pb-6 lg:pt-0 lg:pl-8 text-processbar-primary">* Kun ved ønske om negativer retur</p>
         </form>
         </div>
     </div>
@@ -133,7 +133,7 @@ import Ialt from "../components/Ialt.astro";
             </div>
         </div>
 
-            <p class="px-13 text-sm text-text_card-price pt-2 pb-6">Hovedgaden 12, 2970 Hørsholm, Denmark</p>
+            <p class="px-13 text-sm text-text_card-price pt-2 pb-6">Hovedgaden 12 <br> 2970 Hørsholm, Denmark</p>
             <p class="px-0 pt-6 text-xs text-center pb-6 text-processbar-primary hidden"></p>
     </form>
     </div>
@@ -151,7 +151,7 @@ import Ialt from "../components/Ialt.astro";
             </div>
 
             <div class="text-xs flex justify-end px-5">
-                <img src="/mobilepay.png"></img>
+                <img src="/mobilepay.svg"></img>
             </div>
         </div>
 
@@ -161,18 +161,18 @@ import Ialt from "../components/Ialt.astro";
 
 
 <div class="mx-12 lg:mx-19 bg-card-primary border border-card-stroke p-8 flex justify-center border-t-0">
-<div class="bg-card-stroke p-6 border border-card-secondary w-full">
+<div class="bg-card-stroke p-4 border border-card-secondary w-full">
 
 <form class="text-text-special">
 
-    <div class="pt-4 grid grid-cols-2">
+    <div class="pt-4 grid grid-cols-2 py-5">
         <div class="flex justify-start">
             <input class="p-5 mx-4 rounded-full text-card-secondary focus:border cursor-pointer focus:border-text-primary focus:ring-card-primary" type="checkbox" id="free" name="free"/>
-            <label class="pl-2 text-sm " for="free">Betalingskort</label>
+            <label class="pl-2 text-sm" for="free">Betalingskort</label>
         </div>
 
         <div class="text-xs flex justify-end px-5">
-            <img src="/kort.png">
+            <img src="/kort.svg">
         </div>
     </div>
 
