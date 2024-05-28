@@ -5,7 +5,7 @@ const {img, title, price} = Astro.props;
 <div class="bg-card-primary hover:bg-card-secondary active:bg-card-secondary border border-card-stroke lg:px-10 lg:py-11  hover:text-text-special btn">
 <img class="w-[100px] h-[100px]" src={img}>
 <p class="text-center text-text-primary text-sm font-['Arial'] lg:pt-9 lg:text-md">{title}</p>
-<p class="text-center text-text_card-price text-sm font-['Arial'] lg:text-md">{price}</p>
+<p class="text-center text-text_card-price text-sm font-['Arial'] lg:text-md price">{price}</p>
 </div>
 
 <script>
@@ -13,6 +13,12 @@ const btn = document.querySelector('.btn');
 btn.addEventListener('click', () => {
     btn.style.backgroundColor = '#E0C56A';
     btn.style.transition = '.5s ease';
+
+    const priceElement = btn.querySelector('.price');
+    if (priceElement) {
+        priceElement.style.color = '#FF0000'; // Change this color to your desired color
+        priceElement.style.transition = '.5s ease';
+    }
     return false
 });
 
