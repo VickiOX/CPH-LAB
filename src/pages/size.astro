@@ -48,14 +48,14 @@ import BestilCard from '../components/BestilCard.astro'
 
 	<h3 class="text-text-primary pt-15 text-center font-bold italic font-['Lora'] lg:text-2xl lg:pt-14 lg:pb-6">Special størrelser</h3>
 	<!-- Card af filmruller -->
-	<div class="flex justify-center">
+	<form class="flex justify-center">
 		<div class="grid grid-cols-2 gap-15 lg:gap-20 px-12 py-5 mx-0 lg:grid-cols-4 ">
-		<BestilCard img="src/assets/images/mm127.webp" alt="35mm filmrulle" title="35mm" price="40 kr."/>
-		<BestilCard img="src/assets/images/mm110.webp" alt="120mm filmrulle" title="120mm" price="120 kr."/>
-		<BestilCard img="src/assets/images/mm126.webp" alt="35mm filmrulle" title="35mm" price="40 kr."/>
-		<BestilCard img="src/assets/images/storformat.webp" alt="120mm filmrulle" title="120mm" price="120 kr."/>
-	</div>
-	</div>
+		<BestilCard img="src/assets/images/mm127.webp" alt="35mm filmrulle" title="35mm" price="40 kr." cardid="1" />
+		<BestilCard img="src/assets/images/mm110.webp" alt="120mm filmrulle" title="120mm" price="120 kr." cardid="2"/>
+		<BestilCard img="src/assets/images/mm126.webp" alt="35mm filmrulle" title="35mm" price="40 kr." cardid="3"/>
+		<BestilCard img="src/assets/images/storformat.webp" alt="120mm filmrulle" title="120mm" price="120 kr." cardid="4"/>
+		</div>
+	</form>
 
 	<!-- Web -->
 <div class="hidden lg:block">
