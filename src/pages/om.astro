@@ -22,7 +22,7 @@ import Virksomhed from "../components/Virksomhed.astro";
   <!-- Hero unit desktop -->
   <div class="w-full relative hidden lg:block">
     <div
-      class="w-full lg:h-[500px] flex items-center justify-center overflow-hidden relative"
+      class="w-full lg:h-[550px] flex items-center justify-center overflow-hidden relative"
     >
       <video width="100%" height="413" autoplay muted loop>
         <source
@@ -42,23 +42,17 @@ import Virksomhed from "../components/Virksomhed.astro";
     </div>
   </div>
 
-  <!-- Hero unit mobil-->
-  <div class="pt-22 w-full relative lg:hidden">
-    <div
-      class="w-full lg:h-[500px] flex items-center justify-center overflow-hidden"
-    >
-      <video width="100%" height="413" autoplay muted loop>
-        <source
-          src="https://video.wixstatic.com/video/392078_3023cbdc223541459d96c48212615446/480p/mp4/file.mp4"
-          type="video/mp4"
-        />
+<!-- Hero unit mobil-->
+  <div class="py-34 w-full relative lg:hidden">
+    <div class="w-full lg:h-[500px] flex items-center justify-center overflow-hidden">
+      <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted>
+        <source src="https://video.wixstatic.com/video/392078_3023cbdc223541459d96c48212615446/480p/mp4/file.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
       </video>
     </div>
-    <div
-      class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
-    >
+    <div class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
       <h1
-        class="mt-32 uppercase pt-10 font-[Lora] font-bold text-text-secondary text-4xl w-[300px] pb-12 relative"
+        class="mt-[500px] uppercase pt-10 font-[Lora] font-bold text-text-secondary text-4xl w-[300px] pb-12 relative"
       >
         Analog er ikke dødt
       </h1>
