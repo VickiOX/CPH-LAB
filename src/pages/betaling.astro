@@ -27,6 +27,7 @@ import Ialt from "../components/Ialt.astro";
     </div>
 </section>
 
+
 <section>
     <h2 class="text-text-secondary text-center font-['Lora'] italic font-bold text-xl lg:text-3xl">Kundeoplysninger</h2>
     <!-- Form -->
@@ -34,61 +35,55 @@ import Ialt from "../components/Ialt.astro";
         
         <form class="text-text-primary" id="Kundeoplysninger">
             <div class="-mt-5">
-            <label for="email" class="text-[12px]">E-mail</label>
-            <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary peer" type="email" id="email" name="email"/>
-            <p class="mt-2 hidden peer-invalid:block text-text-secondary text-[10px] lg:text-xs">
-      Udfyld korrekt e-mail tak.
-    </p>
-        </div>
-
-            <div class="pt-4">
-            <label for="fname" class="text-[12px]">Fornavn</label>
-            <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="fname" name="fname" required />
-         
-        </div>
-
-            <div class="pt-4">
-            <label for="lname" class="text-[12px]">Efternavn</label>
-            <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="lname" name="lname" required/>
-        </div>
-
-            <div class="pt-4">
-            <label for="tel" class="text-[12px]">Telefonnummer</label>
-            <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="tel" id="tel" name="tel" required/>
-        </div>
-
-          
-        <div class="grid grid-cols-2 gap-6">
-            <div class="pt-4">
-                <label for="post" class="text-[12px]">Post nr.</label>
-                <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="post" name="post" pattern="[0-4]*" required/>
+                <label for="email" class="text-[12px]">E-mail</label>
+                <input class="flex w-full items-center text-text-special border border-card-secondary focus:border-text-primary focus:bg-card-secondary focus:ring-1 focus:ring-text-primary peer" type="email" id="email" name="email"/>
+                <p class="mt-2 hidden peer-invalid:block text-text-secondary text-[10px] lg:text-xs">
+                    Udfyld korrekt e-mail tak.
+                  </p>
             </div>
 
-            <div class="pt-4"> 
-                <label for="by" class="text-[12px]">By</label>
-                <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="by" name="by" required/>
+            <div class="pt-4">
+                <label for="fname" class="text-[12px]">Fornavn</label>
+                <input class="flex w-full items-center text-text-special border border-card-secondary focus:border-text-primary focus:bg-card-secondary focus:ring-1 focus:ring-text-primary" type="text" id="fname" name="fname" required />
             </div>
-        </div>
- 
+
+            <div class="pt-4">
+                <label for="lname" class="text-[12px]">Efternavn</label>
+                <input class="flex w-full items-center text-text-special border border-card-secondary focus:border-text-primary focus:bg-card-secondary focus:ring-1 focus:ring-text-primary" type="text" id="lname" name="lname" required/>
+            </div>
+
+            <div class="pt-4">
+                <label for="tel" class="text-[12px]">Telefonnummer</label>
+                <input class="flex w-full items-center text-text-special border border-card-secondary focus:border-text-primary focus:bg-card-secondary focus:ring-1 focus:ring-text-primary" type="tel" id="tel" name="tel" required/>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6">
+                <div class="pt-4">
+                    <label for="post" class="text-[12px]">Post nr.</label>
+                    <input class="flex w-full items-center text-text-special border border-card-secondary focus:border-text-primary focus:bg-card-secondary focus:ring-1 focus:ring-text-primary" type="text" id="post" name="post" pattern="[0-4]*" required/>
+                </div>
+
+                <div class="pt-4"> 
+                    <label for="by" class="text-[12px]">By</label>
+                    <input class="flex w-full items-center text-text-special border border-card-secondary focus:border-text-primary focus:bg-card-secondary focus:ring-1 focus:ring-text-primary" type="text" id="by" name="by" required/>
+                </div>
+            </div>
 
             <div class="grid grid-cols-2 gap-6">
                 <div class="pt-4">
                     <label for="land" class="text-[12px]">Land</label>
-                    <input class="flex w-full items-center text-text-special border border-card-secondary  focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="by" name="by" required/>
+                    <input class="flex w-full items-center text-text-special border border-card-secondary focus:border-text-primary focus:bg-card-secondary focus:ring-1 focus:ring-text-primary" type="text" id="land" name="land" required/>
                 </div>
 
                 <div class="pt-4">
-                    <label for="Region" class="text-[12px]">Region</label>
-                    <input class="flex w-full items-center text-text-special border border-card-secondary focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="text" id="region" name="region" required/>
+                    <label for="region" class="text-[12px]">Region</label>
+                    <input class="flex w-full items-center text-text-special border border-card-secondary focus:border-text-primary focus:bg-card-secondary focus:ring-1 focus:ring-text-primary" type="text" id="region" name="region" required/>
                 </div>
-        </div>
-    </div>
-    </div>
-           
-    
+            </div>
         </form>
     </div>
 </section>
+
 
 
 <section class="lg:pt-0 mt-6">
