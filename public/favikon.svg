@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="body" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.5 479">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fbba09;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="512.5" height="479" rx="42.45" ry="42.45"/>
+  <g>
+    <g>
+      <rect class="cls-2" x="15.72" y="23.53" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="98.34" y="23.53" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="183.98" y="23.53" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="267.96" y="23.53" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="350.58" y="23.53" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="430.76" y="23.53" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="15.72" y="410.41" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="98.34" y="410.41" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="183.98" y="410.41" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="267.96" y="410.41" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="350.58" y="410.41" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+      <rect class="cls-2" x="430.76" y="410.41" width="66.02" height="45.06" rx="8.18" ry="8.18"/>
+    </g>
+  </g>
+</svg>
