@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import HvorforOs1 from "../assets/images/filmruller1.webp";
 import HvorforOs2 from "../assets/images/filmruller2.webp";
 import filmrulle1 from "../assets/images/filmrulle-1.webp";
+import filmrulle2 from "../assets/images/filmrulle-2.webp";
 import filmrulleom from "../assets/images/filmrulle-om.webp";
 import Nicephore from "../assets/images/Nicephore.webp";
 import Eastman from "../assets/images/Eastman.webp";
@@ -235,102 +236,7 @@ import Processbar from "../components/Processbar.astro";
     </div>
   </section>
 
-  <!-- Hvor det blev Retro -->
-  <section class="sektion5 py-22 relative">
-    <div class="md:grid md:grid-cols-2 md:pb-[480px] overflow-hidden">
-      <div></div>
-      <div>
-        <h2
-          class="font-['Lora'] text-text-primary font-bold italic md:text-4xl text-[20px] pl-14"
-        >
-          Hvor det blev retro... <!--indsæt fadeInLeft -->
-        </h2>
-
-        <div
-          class="my-10 gulOverskrift border border-card-stroke w-[270px] md:w-screen -ml-[10px] md:ml-[15px] z-10"
-        >
-          <h3
-            class="py-2 px-5 md:px-8 md:py-4  font-['Lora'] text-text-secondary font-bold md:text-4xl text-[24px] fadeInLeft9 md:fadeInRight2 text-right md:text-left "
-          >
-            Den digitale tidsalder 
-          </h3>
-        </div>
-        <p
-          class="leading-relaxed md:w-4/5 text-text-primary mobil_sm md:text-lg pl-14"
-        >
-          Selvom digital fotografi har domineret markedet siden 1990'erne på
-          grund af dets bekvemmelighed og hurtige resultater, forbliver analog
-          fotografi populært blandt dem der værdsætter det unikke udtryk og den
-          håndværksmæssige proces.
-        </p>
-        <p
-          class="mt-12 leading-relaxed md:w-4/5 text-text-primary mobil_sm md:text-lg pb-32 pl-14"
-        >
-          Både erfarne fotografer og unge entusiaster ser det som en modreaktion
-          mod den manipulerede virkelighed, som digitale medier har skabt, og
-          ser stor værdi i det retro udtryk og den omhu som er forbunden med den
-          analoge praksis.
-        </p>
-      </div>
-    </div>
-
-    <div class="overflow-hidden">
-      <Image
-        src={filmrulle2}
-        alt=""
-        class="w-screen md:w-screen absolute top-[450px] md:top-[150px]"
-      />
-    </div>
-
-    <!-- Hvor vi er nu... -->
-    <div class="md:-mt-28">
-      <h2
-        class="font-['Lora'] text-text-primary font-bold italic md:text-4xl text-[20px] pl-8 md:px-24"
-      >
-        Hvor vi er nu...
-      </h2>
-      <div
-        class="my-10 lg:py-5 gulOverskrift border border-card-stroke w-[100px] md:w-[430px] ml-[-21px] md:ml-[-200px]"
-      >
-        <h3
-          class="py-2 px-5 md:px-8 md:py-4 font-['Lora'] text-text-secondary font-bold md:text-4xl text-[24px] text-right fadeInLeft4"
-        >
-          2024
-        </h3>
-      </div>
-      <div
-        class="paragraf sektion md:grid md:grid-cols-2 md:gap-20 text-text-primary mobil_sm md:text-lg pl-8 md:px-24"
-      >
-        <div class="">
-          <p class="leading-relaxed mobil_sm md:text-lg">
-            Vi tror på, at analogbilleder stadig har en unik charme, der
-            imponerer. Vi elsker det æstetiske udtryk, farverne og den organiske
-            følelse, som film formidler, og vi ønsker at dette medium forbliver
-            i vores måde at fotografere på.
-          </p>
-          <p class="mt-12 mb-12 leading-relaxed mobil_sm md:text-lg">
-            Hos CPH-LAB står vi klar til at hjælpe dig med at få det bedste ud
-            af dine analoge billeder. Vi tilbyder fremkaldelse af dine
-            filmruller, scanning af dine negativer, printning af dine
-            mesterværker og levering af nye filmruller, når du har brug for dem.
-          </p>
-        </div>
-        <div>
-          <p class="leading-relaxed mobil_sm md:text-lg">
-            Vores mission er at gøre det enkelt for alle at skyde analogt og at
-            sikre en pålidelig fremkaldelsesproces. CPH-LAB ønsker at give folk
-            mulighed for at opleve dette særlige udtryk ved at tilbyde en
-            tilgængelig platform.
-          </p>
-          <p class="mt-12 leading-relaxed mobil_sm md:text-lg">
-            Vi har til hensigt at forene det analoge medium med dets tidløse
-            charme og samtidig tilbyde en let og tilgængelig service, der
-            leveres på et digitalt sølvfad..
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <Retro/>
 
   <!-- Stagger animation -->
   <section class="sektion6 relative">
