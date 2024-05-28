@@ -218,9 +218,9 @@ import Processbar from "../components/Processbar.astro";
         alt="Retro Apple Computer"
       />
       <div
-        class="absolute inset-0 w-[300px] md:w-[600px] md:justify-center text-center top-6 md:top-1/3 left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:text-lg mobil_sm crossfadeimages"
+        class="absolute inset-0 w-[500px] md:w-[600px] md:justify-center text-center top-6 md:top-1/3 left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:text-lg mobil_sm crossfadeimages"
       >
-        <p class="leading-relaxedcrossfadetopimg absolute text-center top-20  left-1/2 -translate-x-1/2  -translate-y-2/2 ">
+        <p class="leading-relaxed crossfadetopimg absolute text-center top-20  left-1/2 -translate-x-1/2  -translate-y-2/2 ">
           Fra slutningen af 1980'erne ændrede fotografering radikalt.
           Digitalkameraets fremkomst gjorde det hurtigere, billigere og mere
           tilgængeligt at tage billeder. Fotografer kunne tage ubegrænsede
@@ -559,10 +559,10 @@ inView(fadeIn7, () => {
   // crossfade animation
   scroll(animate(".crossfadebottomimg", { opacity: [0, 1] }), {
     target: document.querySelector(".crossfadeimages"),
-    offset: ["-25vh", "25vh"],
+    offset: ["-90vh", "90vh"],
   });
   scroll(animate(".crossfadetopimg", { opacity: [1, 0] }), {
     target: document.querySelector(".crossfadeimages"),
-    offset: ["-25vh", "25vh"],
+    offset: ["-100vh", "10vh"],
   });
 </script>
