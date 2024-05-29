@@ -33,11 +33,6 @@ module.exports = {
       "6xl": "60px",
       "7xl": "80px",
     },
-
-    fontFamily: {
-      display: ["Lora"],
-      body: ["Arial"],
-    },
   },
 
   theme: {
@@ -79,6 +74,11 @@ module.exports = {
     },
 
     extend: {
+      fontFamily: {
+        display: ['Lora', 'serif'],
+        sans: ['arial', 'sans-serif'],
+      },
+      
       colors: {
         grey: {
           500: "#010101",

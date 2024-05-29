@@ -10,7 +10,7 @@ import BestilCard from "../components/BestilCard.astro";
 	
     <!-- Brødkrummesti mobil -->
     <div class="lg:hidden">
-		<div class="list-none flex text-text-primary font-extralight pt-22 gap-4 text-xs mx-11 font-['Arial']">
+		<div class="list-none flex text-text-primary font-extralight pt-22 gap-4 text-xs mx-11">
 			<p>Fremkaldelse</p>
 			<p>Størrelse</p>
 			<p>Fremkaldelsestype</p>
@@ -24,7 +24,7 @@ import BestilCard from "../components/BestilCard.astro";
 	
 	  <!-- Brødkrummesti web -->
 	  <div class="hidden lg:block">
-		<div class="list-none flex text-text-primary font-extralight pt-12 pb-12 gap-14 text-sm font-['Arial']">
+		<div class="list-none flex text-text-primary font-extralight pt-12 pb-12 gap-14 text-sm">
 			<p>Fremkaldelse</p>
 			<p>Størrelse</p>
 			<p>Fremkaldelsestype</p>
@@ -34,12 +34,12 @@ import BestilCard from "../components/BestilCard.astro";
 		</div>
 	</div>
 
-	<h1 class="text-text-primary text-center text-[32px] font-['Lora'] italic font-bold pt-12 lg:mt-0 lg:text-5xl">Kvantitet</h1>
+	<h1 class="text-text-primary text-center text-[32px] font-display italic font-bold pt-12 lg:mt-0 lg:text-5xl">Kvantitet</h1>
 
 
 	<!-- Card af filmruller -->
 	<section class="mx-11">
-        <h2 class="text-text-secondary text-center font-['Lora'] italic font-bold text-xl lg:text-3xl lg:pt-8">Vælg antal filmruller</h2>
+        <h2 class="text-text-secondary text-center font-display italic font-bold text-xl lg:text-3xl lg:pt-8">Vælg antal filmruller</h2>
 
     <div class="flex justify-center pt-10 ">
 		<div class="grid grid-cols-3 gap-9 lg:gap-20 lg:pt-14">
@@ -54,7 +54,7 @@ import BestilCard from "../components/BestilCard.astro";
 
     <div class="flex justify-center">
     <div class="bg-card-primary border border-card-stroke px-6 py-4 grid grid-cols-3 mt-10 gap-5 lg:mt-18">
-        <label class="text-text-primary py-4 col-start-1 font-['Arial']">Andet antal</label>
+        <label class="text-text-primary py-4 col-start-1">Andet antal</label>
         <input class="w-[100px] h-[40px] col-start-3 lg:w-[185px] focus:bg-card-secondary focus:border-2 focus:border-text-primary focus:ring-card-primary" type="number" id="quantity" name="quantity" min="1" max="100">
     </div>
 </div>

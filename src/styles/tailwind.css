@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
+  /* @font-face {
     font-family: "Lora";
     src: url(fonts/Lora.ttf) format(ttf);
     font-style: italic;
-  }
+  } */
 }
