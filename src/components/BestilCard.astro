@@ -3,9 +3,9 @@ const {img, title, price} = Astro.props;
 ---
 
 <div class="bg-card-primary hover:bg-card-secondary active:bg-card-secondary border border-card-stroke lg:px-10 lg:py-11  hover:text-text-special btn cursor-pointer">
-<img class="w-[100px] h-[100px]" src={img}>
-<p class="text-center text-text-primary text-sm font-['Arial'] lg:pt-9 lg:text-md text">{title}</p>
-<p class="text-center text-text_card-price text-sm font-['Arial'] lg:text-md price">{price}</p>
+<img class="md:w-[100px] md:h-[80px] w-auto h-full" src={img}>
+<p class="text-center text-text-primary text-sm lg:pt-9 lg:text-md text">{title}</p>
+<p class="text-center text-text_card-price text-sm lg:text-md price">{price}</p>
 </div>
 
 <script>
